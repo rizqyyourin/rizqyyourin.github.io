@@ -39,7 +39,7 @@ export default defineNuxtConfig({
 
   // App configuration
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/Web-Portfolio/' : '/',
+    baseURL: '/',
     head: {
       title: 'Laravel Specialist Portfolio',
       meta: [

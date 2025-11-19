@@ -3,6 +3,7 @@ node_modules/
 .nuxt/
 .output/
 dist/
+# root folder is GitHub Pages, allowed to commit
 
 # Build outputs
 .cache/
