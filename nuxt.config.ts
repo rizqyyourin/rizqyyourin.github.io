@@ -6,6 +6,11 @@ export default defineNuxtConfig({
   // SSR and rendering - disable SSR for GitHub Pages SPA
   ssr: false,
   
+  // Generate static site with index.html
+  routeRules: {
+    '/**': { prerender: true }
+  },
+  
   // Modules
   modules: ['@nuxtjs/tailwindcss'],
   
