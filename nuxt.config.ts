@@ -44,7 +44,7 @@ export default defineNuxtConfig({
 
   // App configuration
   app: {
-    baseURL: '/Portfolio/',
+    baseURL: '/',
     head: {
       title: 'Laravel Specialist Portfolio',
       meta: [
