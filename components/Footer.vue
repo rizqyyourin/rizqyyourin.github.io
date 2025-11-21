@@ -40,7 +40,7 @@
 
       <!-- Divider -->
       <div class="border-t border-dark-700 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-gray-400 text-sm">© 2025 Laravel Specialist Portfolio. All rights reserved.</p>
+        <p class="text-gray-400 text-sm">© 2025 Yourin Portfolio</p>
         <div class="flex gap-6 mt-4 md:mt-0 text-gray-400">
           <a href="#" class="hover:text-primary-500 transition-colors">Privacy</a>
           <a href="#" class="hover:text-primary-500 transition-colors">Terms</a>

@@ -118,20 +118,27 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Project 1 -->
-          <article class="h-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-lg transition-shadow flex flex-col">
-            <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center border-b border-gray-200 dark:border-gray-700 overflow-hidden">
-              <img src="/images/e-vote.png" alt="E-Voting Platform" class="w-full h-full object-cover" />
-            </div>
-            <div class="p-5 flex flex-col flex-grow">
-              <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">E-Voting Platform</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">Secure and transparent electronic voting platform with real-time result tracking, voter authentication, and comprehensive audit trails for trustworthy elections.</p>
-              <div class="flex flex-wrap gap-2">
-                <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Laravel</span>
-                <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Livewire</span>
-                <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">SQLite</span>
+          <a href="https://evote.yourin.my.id" target="_blank" rel="noopener noreferrer" class="group">
+            <article class="h-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-lg transition-shadow flex flex-col group-hover:border-primary-500 dark:group-hover:border-primary-500">
+              <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center border-b border-gray-200 dark:border-gray-700 overflow-hidden relative">
+                <img src="/images/e-vote.png" alt="E-Voting Platform" class="w-full h-full object-cover" />
+                <div class="absolute top-3 right-3 bg-white dark:bg-gray-800 rounded-lg p-2 shadow group-hover:shadow-lg transition-all">
+                  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linejoin="round" d="m17 13 3.4641-2V7L17 5l-3.4641 2v4M17 13l-3.4641-2M17 13v4l-7.00001 4M17 13V9m0 4-7.00001 4m3.53591-6L10.5 12.7348M9.99999 21l-3.4641-2.1318M9.99999 21v-4m-3.4641 2v-.1318m0 0V15L10.5 12.7348m-3.96411 6.1334L3.5 17V5m0 0L7 3l3.5 2m-7 0 2.99999 2M10.5 5v7.7348M10.5 5 6.49999 7M17 9l3.5-2M17 9l-3.5-2M9.99999 17l-3.5-2m0 .5V7"/>
+                  </svg>
+                </div>
               </div>
-            </div>
-          </article>
+              <div class="p-5 flex flex-col flex-grow">
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">E-Voting Platform</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">Secure and transparent electronic voting platform with real-time result tracking, voter authentication, and comprehensive audit trails for trustworthy elections.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Laravel</span>
+                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Livewire</span>
+                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">SQLite</span>
+                </div>
+              </div>
+            </article>
+          </a>
 
           <!-- Project 2 -->
           <article class="h-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-lg transition-shadow flex flex-col">
