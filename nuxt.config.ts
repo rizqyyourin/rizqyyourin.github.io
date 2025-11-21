@@ -63,11 +63,15 @@ export default defineNuxtConfig({
         { 
           hid: 'og-title', 
           property: 'og:title', 
-          content: 'Laravel Specialist Portfolio'
+          content: 'Yourin Portfolio'
         }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { 
+          rel: 'icon', 
+          type: 'image/svg+xml',
+          href: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23ef4444" width="100" height="100"/><text x="50" y="65" font-size="60" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">Y</text></svg>'
+        },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' }
       ],
       htmlAttrs: {
