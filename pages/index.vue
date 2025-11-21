@@ -118,7 +118,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Project 1 -->
-          <a href="https://evote.yourin.my.id" target="_blank" rel="noopener noreferrer" class="group">
+          <a href="https://e-voting.yourin.my.id/" target="_blank" rel="noopener noreferrer" class="group">
             <article class="h-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-lg transition-shadow flex flex-col group-hover:border-primary-500 dark:group-hover:border-primary-500">
               <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center border-b border-gray-200 dark:border-gray-700 overflow-hidden relative">
                 <img src="/images/e-vote.png" alt="E-Voting Platform" class="w-full h-full object-cover" />
