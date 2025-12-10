@@ -7,8 +7,6 @@ module.exports = {
     './app.vue',
     './error.vue',
     'node_modules/flowbite/**/*.{js,jsx,ts,tsx}',
-    'node_modules/daisyui/dist/**/*.js',
-    'node_modules/daisyui/dist/**/*.jsx',
   ],
   darkMode: 'class',
   theme: {
@@ -94,40 +92,5 @@ module.exports = {
   },
   plugins: [
     require('flowbite/plugin'),
-    require('daisyui'),
   ],
-  daisyui: {
-    themes: [
-      {
-        light: {
-          primary: '#ef4444',
-          secondary: '#f97316',
-          accent: '#06b6d4',
-          neutral: '#f3f4f6',
-          'base-100': '#ffffff',
-          'base-200': '#f9fafb',
-          'base-300': '#f3f4f6',
-          info: '#0ea5e9',
-          success: '#10b981',
-          warning: '#f59e0b',
-          error: '#ef4444',
-        },
-      },
-      {
-        dark: {
-          primary: '#ef4444',
-          secondary: '#f97316',
-          accent: '#06b6d4',
-          neutral: '#1f2937',
-          'base-100': '#111827',
-          'base-200': '#1f2937',
-          'base-300': '#374151',
-          info: '#0ea5e9',
-          success: '#10b981',
-          warning: '#f59e0b',
-          error: '#ef4444',
-        },
-      },
-    ],
-  },
 }
