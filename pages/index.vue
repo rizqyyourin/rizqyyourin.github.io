@@ -79,10 +79,7 @@
           <div class="group relative overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg p-6 border border-blue-200 dark:border-blue-700 hover:shadow-lg transition-all">
             <div class="flex flex-col items-center text-center h-full justify-between">
               <div class="w-16 h-16 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <svg class="w-8 h-8 text-blue-600" viewBox="0 0 48 48" fill="currentColor">
-                  <path d="M24 4c11.046 0 20 8.954 20 20s-8.954 20-20 20S4 35.046 4 24 12.954 4 24 4m0 2c-9.94 0-18 8.06-18 18s8.06 18 18 18 18-8.06 18-18-8.06-18-18-18z"/>
-                  <path d="M16 24c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8-8-3.582-8-8z"/>
-                </svg>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" alt="Tailwind CSS" class="w-10 h-10 object-contain" />
               </div>
               <div>
                 <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Tailwind CSS</h3>
@@ -95,9 +92,7 @@
           <div class="group relative overflow-hidden bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 rounded-lg p-6 border border-green-200 dark:border-green-700 hover:shadow-lg transition-all">
             <div class="flex flex-col items-center text-center h-full justify-between">
               <div class="w-16 h-16 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <svg class="w-8 h-8 text-green-600" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
-                </svg>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqvNQyIyR6GOd1wFUk_UM5PScxQvwL0SSpsQ&s" alt="Alpine.js" class="w-10 h-10 object-contain" />
               </div>
               <div>
                 <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Alpine.js</h3>
@@ -110,9 +105,7 @@
           <div class="group relative overflow-hidden bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/30 dark:to-red-800/30 rounded-lg p-6 border border-red-200 dark:border-red-700 hover:shadow-lg transition-all">
             <div class="flex flex-col items-center text-center h-full justify-between">
               <div class="w-16 h-16 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <svg class="w-8 h-8 text-red-600" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.731-2.004 1.439-.103.25-.129.599-.129.949v5.417h-3.554s.016-8.786 0-9.714h3.554v1.377c.43-.664 1.202-1.61 2.923-1.61 2.134 0 3.734 1.398 3.734 4.402l-.001 5.545zM5.337 6.556a1.848 1.848 0 11.824-1.844 1.844 1.844 0 01-.824 1.844zm1.586 13.896H3.907V10.738h2.779v9.714zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png" alt="Laravel" class="w-10 h-10 object-contain" />
               </div>
               <div>
                 <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Laravel</h3>
@@ -125,9 +118,7 @@
           <div class="group relative overflow-hidden bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 rounded-lg p-6 border border-purple-200 dark:border-purple-700 hover:shadow-lg transition-all">
             <div class="flex flex-col items-center text-center h-full justify-between">
               <div class="w-16 h-16 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <svg class="w-8 h-8 text-purple-600" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                </svg>
+                <img src="https://logo.svgcdn.com/devicon/livewire-original-wordmark.png" alt="Livewire" class="w-10 h-10 object-contain" />
               </div>
               <div>
                 <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Livewire</h3>
