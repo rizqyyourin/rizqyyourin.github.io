@@ -68,7 +68,7 @@
     <section class="py-16 md:py-20 bg-white dark:bg-gray-800">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div class="text-center mb-12">
-          <h2 class="section-title">I Use TALL Stack for Development</h2>
+          <h2 class="section-title">I Use <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700">TALL</span> Stack for Development</h2>
           <p class="section-subtitle max-w-2xl mx-auto">
             A powerful combination of Tailwind CSS, Alpine.js, Laravel, and Livewire. This modern stack allows me to build responsive, interactive, and maintainable web applications with exceptional speed and efficiency.
           </p>
@@ -127,7 +127,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 md:py-32 bg-white dark:bg-gray-900">
+    <section id="projects" class="py-20 md:py-32 bg-gray-50 dark:bg-gray-900">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div class="text-center mb-16">
           <h2 class="section-title">Featured Projects</h2>
@@ -253,7 +253,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 md:py-32 bg-gray-50 dark:bg-dark-800">
+    <section id="skills" class="py-20 md:py-32 bg-white dark:bg-gray-800">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div class="text-center mb-16">
           <h2 class="section-title">Skills & Expertise</h2>
@@ -424,7 +424,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 md:py-32 bg-white dark:bg-gray-900">
+    <section id="contact" class="py-20 md:py-32 bg-gray-50 dark:bg-gray-900">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div class="text-center mb-16">
           <h2 class="section-title">Get In Touch</h2>
