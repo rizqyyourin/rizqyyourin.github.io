@@ -74,51 +74,51 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
           <!-- Tailwind CSS -->
-          <div class="group relative overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg p-8 border border-blue-200 dark:border-blue-700 hover:shadow-xl transition-all">
+          <div class="group relative overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg p-4 md:p-8 border border-blue-200 dark:border-blue-700 hover:shadow-xl transition-all">
             <div class="flex flex-col items-center text-center h-full justify-between">
-              <div class="w-20 h-20 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" alt="Tailwind CSS" class="w-12 h-12 object-contain" />
+              <div class="w-16 md:w-20 h-16 md:h-20 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-3 md:mb-6 group-hover:scale-110 transition-transform">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" alt="Tailwind CSS" class="w-10 md:w-12 h-10 md:h-12 object-contain" />
               </div>
               <div>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Tailwind CSS</h3>
+                <h3 class="text-lg md:text-xl font-bold text-gray-900 dark:text-white">Tailwind CSS</h3>
               </div>
             </div>
           </div>
 
           <!-- Alpine.js -->
-          <div class="group relative overflow-hidden bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 rounded-lg p-8 border border-green-200 dark:border-green-700 hover:shadow-xl transition-all">
+          <div class="group relative overflow-hidden bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 rounded-lg p-4 md:p-8 border border-green-200 dark:border-green-700 hover:shadow-xl transition-all">
             <div class="flex flex-col items-center text-center h-full justify-between">
-              <div class="w-20 h-20 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqvNQyIyR6GOd1wFUk_UM5PScxQvwL0SSpsQ&s" alt="Alpine.js" class="w-12 h-12 object-contain" />
+              <div class="w-16 md:w-20 h-16 md:h-20 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-3 md:mb-6 group-hover:scale-110 transition-transform">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqvNQyIyR6GOd1wFUk_UM5PScxQvwL0SSpsQ&s" alt="Alpine.js" class="w-10 md:w-12 h-10 md:h-12 object-contain" />
               </div>
               <div>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Alpine.js</h3>
+                <h3 class="text-lg md:text-xl font-bold text-gray-900 dark:text-white">Alpine.js</h3>
               </div>
             </div>
           </div>
 
           <!-- Laravel -->
-          <div class="group relative overflow-hidden bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/30 dark:to-red-800/30 rounded-lg p-8 border border-red-200 dark:border-red-700 hover:shadow-xl transition-all">
+          <div class="group relative overflow-hidden bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/30 dark:to-red-800/30 rounded-lg p-4 md:p-8 border border-red-200 dark:border-red-700 hover:shadow-xl transition-all">
             <div class="flex flex-col items-center text-center h-full justify-between">
-              <div class="w-20 h-20 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png" alt="Laravel" class="w-12 h-12 object-contain" />
+              <div class="w-16 md:w-20 h-16 md:h-20 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-3 md:mb-6 group-hover:scale-110 transition-transform">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png" alt="Laravel" class="w-10 md:w-12 h-10 md:h-12 object-contain" />
               </div>
               <div>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Laravel</h3>
+                <h3 class="text-lg md:text-xl font-bold text-gray-900 dark:text-white">Laravel</h3>
               </div>
             </div>
           </div>
 
           <!-- Livewire -->
-          <div class="group relative overflow-hidden bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 rounded-lg p-8 border border-purple-200 dark:border-purple-700 hover:shadow-xl transition-all">
+          <div class="group relative overflow-hidden bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 rounded-lg p-4 md:p-8 border border-purple-200 dark:border-purple-700 hover:shadow-xl transition-all">
             <div class="flex flex-col items-center text-center h-full justify-between">
-              <div class="w-20 h-20 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <img src="https://logo.svgcdn.com/devicon/livewire-original-wordmark.png" alt="Livewire" class="w-12 h-12 object-contain" />
+              <div class="w-16 md:w-20 h-16 md:h-20 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-3 md:mb-6 group-hover:scale-110 transition-transform">
+                <img src="https://logo.svgcdn.com/devicon/livewire-original-wordmark.png" alt="Livewire" class="w-10 md:w-12 h-10 md:h-12 object-contain" />
               </div>
               <div>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Livewire</h3>
+                <h3 class="text-lg md:text-xl font-bold text-gray-900 dark:text-white">Livewire</h3>
               </div>
             </div>
           </div>
@@ -425,66 +425,66 @@
     <!-- Contact Section -->
     <section id="contact" class="py-20 md:py-32 bg-white dark:bg-gray-800">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <div class="text-center mb-20">
-          <h2 class="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-4">Get In Touch</h2>
-          <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        <div class="text-center mb-12 md:mb-16">
+          <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white mb-3 md:mb-4">Get In Touch</h2>
+          <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Let's collaborate on your next Laravel project. Reach out through any of these channels.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           <!-- Email -->
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rizqyyourin6@gmail.com&su=Halo%20Rizqy&body=Halo%20Rizqy%2C%0A%0ASaya%20ingin%20bertanya%20tentang...%0A%0ATerima%20kasih." target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center text-center p-8 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-all duration-300">
-            <div class="w-20 h-20 rounded-xl flex items-center justify-center mb-6 bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/20 dark:to-red-900/30 group-hover:scale-110 group-hover:shadow-lg transition-all duration-300">
-              <svg class="w-10 h-10 text-red-600 dark:text-red-400" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rizqyyourin6@gmail.com&su=Halo%20Rizqy&body=Halo%20Rizqy%2C%0A%0ASaya%20ingin%20bertanya%20tentang...%0A%0ATerima%20kasih." target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center text-center p-4 md:p-6 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-red-500 dark:hover:border-red-400 hover:shadow-md dark:hover:bg-gray-700/30 transition-all duration-300">
+            <div class="w-16 md:w-20 h-16 md:h-20 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/20 dark:to-red-900/30 group-hover:scale-110 group-hover:shadow-md transition-all duration-300">
+              <svg class="w-8 md:w-10 h-8 md:h-10 text-red-600 dark:text-red-400" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Email</h3>
-            <p class="text-gray-600 dark:text-gray-400 font-medium">rizqyyourin6@gmail.com</p>
+            <h3 class="text-base md:text-lg font-bold text-gray-900 dark:text-white mb-1">Email</h3>
+            <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 font-medium">rizqyyourin6@gmail.com</p>
           </a>
 
           <!-- WhatsApp -->
-          <a href="https://wa.me/6285774414941" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center text-center p-8 rounded-2xl hover:bg-green-50 dark:hover:bg-green-900/10 transition-all duration-300">
-            <div class="w-20 h-20 rounded-xl flex items-center justify-center mb-6 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-900/30 group-hover:scale-110 group-hover:shadow-lg transition-all duration-300">
-              <svg class="w-10 h-10 text-green-600 dark:text-green-400" fill="currentColor" fill-rule="evenodd" viewBox="0 0 24 24" clip-rule="evenodd"><path d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"/><path d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"/></svg>
+          <a href="https://wa.me/6285774414941" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center text-center p-4 md:p-6 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-green-500 dark:hover:border-green-400 hover:shadow-md dark:hover:bg-gray-700/30 transition-all duration-300">
+            <div class="w-16 md:w-20 h-16 md:h-20 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-900/30 group-hover:scale-110 group-hover:shadow-md transition-all duration-300">
+              <svg class="w-8 md:w-10 h-8 md:h-10 text-green-600 dark:text-green-400" fill="currentColor" fill-rule="evenodd" viewBox="0 0 24 24" clip-rule="evenodd"><path d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"/><path d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"/></svg>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">WhatsApp</h3>
-            <p class="text-gray-600 dark:text-gray-400 font-medium">+62 857 7441 4941</p>
+            <h3 class="text-base md:text-lg font-bold text-gray-900 dark:text-white mb-1">WhatsApp</h3>
+            <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 font-medium">+62 857 7441 4941</p>
           </a>
 
           <!-- GitHub -->
-          <a href="https://github.com/rizqyyourin" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center text-center p-8 rounded-2xl hover:bg-gray-900/5 dark:hover:bg-white/5 transition-all duration-300">
-            <div class="w-20 h-20 rounded-xl flex items-center justify-center mb-6 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 group-hover:scale-110 group-hover:shadow-lg transition-all duration-300">
-              <svg class="w-10 h-10 text-gray-800 dark:text-gray-200" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <a href="https://github.com/rizqyyourin" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center text-center p-4 md:p-6 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-600 hover:shadow-md dark:hover:bg-gray-700/30 transition-all duration-300">
+            <div class="w-16 md:w-20 h-16 md:h-20 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 group-hover:scale-110 group-hover:shadow-md transition-all duration-300">
+              <svg class="w-8 md:w-10 h-8 md:h-10 text-gray-800 dark:text-gray-200" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">GitHub</h3>
-            <p class="text-gray-600 dark:text-gray-400 font-medium">@rizqyyourin</p>
+            <h3 class="text-base md:text-lg font-bold text-gray-900 dark:text-white mb-1">GitHub</h3>
+            <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 font-medium">@rizqyyourin</p>
           </a>
 
           <!-- LinkedIn -->
-          <a href="https://linkedin.com/in/rizqyyourin" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center text-center p-8 rounded-2xl hover:bg-blue-50 dark:hover:bg-blue-900/10 transition-all duration-300">
-            <div class="w-20 h-20 rounded-xl flex items-center justify-center mb-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-900/30 group-hover:scale-110 group-hover:shadow-lg transition-all duration-300">
-              <svg class="w-10 h-10 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+          <a href="https://linkedin.com/in/rizqyyourin" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center text-center p-4 md:p-6 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 hover:shadow-md dark:hover:bg-gray-700/30 transition-all duration-300">
+            <div class="w-16 md:w-20 h-16 md:h-20 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-900/30 group-hover:scale-110 group-hover:shadow-md transition-all duration-300">
+              <svg class="w-8 md:w-10 h-8 md:h-10 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">LinkedIn</h3>
-            <p class="text-gray-600 dark:text-gray-400 font-medium">Rizqy Yourin</p>
+            <h3 class="text-base md:text-lg font-bold text-gray-900 dark:text-white mb-1">LinkedIn</h3>
+            <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 font-medium">Rizqy Yourin</p>
           </a>
 
           <!-- Instagram -->
-          <a href="https://instagram.com/rizqyyourin" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center text-center p-8 rounded-2xl hover:bg-pink-50 dark:hover:bg-pink-900/10 transition-all duration-300">
-            <div class="w-20 h-20 rounded-xl flex items-center justify-center mb-6 bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-900/20 dark:to-pink-900/30 group-hover:scale-110 group-hover:shadow-lg transition-all duration-300">
-              <svg class="w-10 h-10 text-pink-600 dark:text-pink-400" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5H7m0 2h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3m5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10m0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6m5.5-3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
+          <a href="https://instagram.com/rizqyyourin" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center text-center p-4 md:p-6 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-pink-500 dark:hover:border-pink-400 hover:shadow-md dark:hover:bg-gray-700/30 transition-all duration-300">
+            <div class="w-16 md:w-20 h-16 md:h-20 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-900/20 dark:to-pink-900/30 group-hover:scale-110 group-hover:shadow-md transition-all duration-300">
+              <svg class="w-8 md:w-10 h-8 md:h-10 text-pink-600 dark:text-pink-400" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5H7m0 2h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3m5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10m0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6m5.5-3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Instagram</h3>
-            <p class="text-gray-600 dark:text-gray-400 font-medium">@rizqyyourin</p>
+            <h3 class="text-base md:text-lg font-bold text-gray-900 dark:text-white mb-1">Instagram</h3>
+            <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 font-medium">@rizqyyourin</p>
           </a>
 
           <!-- Threads -->
-          <a href="https://www.threads.com/@rizqyyourin" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center text-center p-8 rounded-2xl hover:bg-gray-900/5 dark:hover:bg-white/5 transition-all duration-300">
-            <div class="w-20 h-20 rounded-xl flex items-center justify-center mb-6 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 group-hover:scale-110 group-hover:shadow-lg transition-all duration-300">
-              <svg class="w-10 h-10 text-gray-800 dark:text-gray-200" fill="currentColor" viewBox="0 0 24 24"><path d="M12.025 2C6.5 2 2 6.477 2 12s4.5 10 10.025 10c.088 0 .175 0 .263-.003C17.5 21.996 22 17.519 22 12s-4.5-10-10.025-10h.025zm0 2c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8zm2 2h-4v8h4V6zm-1 2h-2v4h2V8z"/></svg>
+          <a href="https://www.threads.com/@rizqyyourin" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center text-center p-4 md:p-6 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-600 hover:shadow-md dark:hover:bg-gray-700/30 transition-all duration-300">
+            <div class="w-16 md:w-20 h-16 md:h-20 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 group-hover:scale-110 group-hover:shadow-md transition-all duration-300">
+              <span class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-200">@</span>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Threads</h3>
-            <p class="text-gray-600 dark:text-gray-400 font-medium">@rizqyyourin</p>
+            <h3 class="text-base md:text-lg font-bold text-gray-900 dark:text-white mb-1">Threads</h3>
+            <p class="text-xs md:text-sm text-gray-600 dark:text-gray-400 font-medium">@rizqyyourin</p>
           </a>
         </div>
       </div>
