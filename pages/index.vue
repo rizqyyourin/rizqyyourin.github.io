@@ -65,7 +65,7 @@
     </section>
 
     <!-- TALL Stack Section -->
-    <section class="py-16 md:py-20 bg-white dark:bg-gray-800">
+    <section id="tall-stack" class="py-16 md:py-20 bg-white dark:bg-gray-800">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div class="text-center mb-12">
           <h2 class="section-title">I Use <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700">TALL</span> Stack for Development</h2>
@@ -560,8 +560,8 @@ const breadcrumbSchema = {
     {
       '@type': 'ListItem',
       position: 2,
-      name: 'About',
-      item: 'https://yourin.my.id#about'
+      name: 'Tech Stack',
+      item: 'https://yourin.my.id#tall-stack'
     },
     {
       '@type': 'ListItem',

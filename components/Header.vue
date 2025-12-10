@@ -18,11 +18,11 @@
             <span v-if="activeSection === 'home'" class="absolute bottom-0 left-0 w-full h-0.5 bg-primary-500 rounded-full"></span>
           </a>
           <a 
-            href="#about"
-            :class="['text-gray-600 dark:text-gray-300 hover:text-primary-500 transition-colors font-medium relative group/nav', activeSection === 'about' ? 'text-primary-500' : '']"
+            href="#tall-stack"
+            :class="['text-gray-600 dark:text-gray-300 hover:text-primary-500 transition-colors font-medium relative group/nav', activeSection === 'tall-stack' ? 'text-primary-500' : '']"
           >
-            About
-            <span v-if="activeSection === 'about'" class="absolute bottom-0 left-0 w-full h-0.5 bg-primary-500 rounded-full"></span>
+            Tech Stack
+            <span v-if="activeSection === 'tall-stack'" class="absolute bottom-0 left-0 w-full h-0.5 bg-primary-500 rounded-full"></span>
           </a>
           <a 
             href="#projects"
@@ -68,11 +68,11 @@
           Home
         </a>
         <a 
-          href="#about"
-          :class="['block px-4 py-2 text-gray-600 dark:text-gray-300 hover:text-primary-500 font-medium rounded-lg', activeSection === 'about' ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-500' : '']"
+          href="#tall-stack"
+          :class="['block px-4 py-2 text-gray-600 dark:text-gray-300 hover:text-primary-500 font-medium rounded-lg', activeSection === 'tall-stack' ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-500' : '']"
           @click="isMobileMenuOpen = false"
         >
-          About
+          Tech Stack
         </a>
         <a 
           href="#projects"
@@ -104,7 +104,7 @@ const activeSection = ref('home')
 
 onMounted(() => {
   const handleScroll = () => {
-    const sections = ['home', 'about', 'projects', 'skills', 'contact']
+    const sections = ['home', 'tall-stack', 'projects', 'skills', 'contact']
     
     for (const section of sections) {
       const element = document.getElementById(section)
