@@ -65,60 +65,60 @@
     </section>
 
     <!-- TALL Stack Section -->
-    <section id="tall-stack" class="py-16 md:py-20 bg-white dark:bg-gray-800">
+    <section id="tall-stack" class="py-24 md:py-32 bg-white dark:bg-gray-800">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <div class="text-center mb-12">
-          <h2 class="section-title">I Use <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700">TALL</span> Stack for Development</h2>
-          <p class="section-subtitle max-w-2xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-4">I Use <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700">TALL</span> Stack for Development</h2>
+          <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
             A powerful combination of Tailwind CSS, Alpine.js, Laravel, and Livewire. This modern stack allows me to build responsive, interactive, and maintainable web applications with exceptional speed and efficiency.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Tailwind CSS -->
-          <div class="group relative overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg p-6 border border-blue-200 dark:border-blue-700 hover:shadow-lg transition-all">
+          <div class="group relative overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg p-8 border border-blue-200 dark:border-blue-700 hover:shadow-xl transition-all">
             <div class="flex flex-col items-center text-center h-full justify-between">
-              <div class="w-16 h-16 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" alt="Tailwind CSS" class="w-10 h-10 object-contain" />
+              <div class="w-20 h-20 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" alt="Tailwind CSS" class="w-12 h-12 object-contain" />
               </div>
               <div>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Tailwind CSS</h3>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Tailwind CSS</h3>
               </div>
             </div>
           </div>
 
           <!-- Alpine.js -->
-          <div class="group relative overflow-hidden bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 rounded-lg p-6 border border-green-200 dark:border-green-700 hover:shadow-lg transition-all">
+          <div class="group relative overflow-hidden bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 rounded-lg p-8 border border-green-200 dark:border-green-700 hover:shadow-xl transition-all">
             <div class="flex flex-col items-center text-center h-full justify-between">
-              <div class="w-16 h-16 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqvNQyIyR6GOd1wFUk_UM5PScxQvwL0SSpsQ&s" alt="Alpine.js" class="w-10 h-10 object-contain" />
+              <div class="w-20 h-20 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqvNQyIyR6GOd1wFUk_UM5PScxQvwL0SSpsQ&s" alt="Alpine.js" class="w-12 h-12 object-contain" />
               </div>
               <div>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Alpine.js</h3>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Alpine.js</h3>
               </div>
             </div>
           </div>
 
           <!-- Laravel -->
-          <div class="group relative overflow-hidden bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/30 dark:to-red-800/30 rounded-lg p-6 border border-red-200 dark:border-red-700 hover:shadow-lg transition-all">
+          <div class="group relative overflow-hidden bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/30 dark:to-red-800/30 rounded-lg p-8 border border-red-200 dark:border-red-700 hover:shadow-xl transition-all">
             <div class="flex flex-col items-center text-center h-full justify-between">
-              <div class="w-16 h-16 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png" alt="Laravel" class="w-10 h-10 object-contain" />
+              <div class="w-20 h-20 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png" alt="Laravel" class="w-12 h-12 object-contain" />
               </div>
               <div>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Laravel</h3>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Laravel</h3>
               </div>
             </div>
           </div>
 
           <!-- Livewire -->
-          <div class="group relative overflow-hidden bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 rounded-lg p-6 border border-purple-200 dark:border-purple-700 hover:shadow-lg transition-all">
+          <div class="group relative overflow-hidden bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 rounded-lg p-8 border border-purple-200 dark:border-purple-700 hover:shadow-xl transition-all">
             <div class="flex flex-col items-center text-center h-full justify-between">
-              <div class="w-16 h-16 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <img src="https://logo.svgcdn.com/devicon/livewire-original-wordmark.png" alt="Livewire" class="w-10 h-10 object-contain" />
+              <div class="w-20 h-20 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <img src="https://logo.svgcdn.com/devicon/livewire-original-wordmark.png" alt="Livewire" class="w-12 h-12 object-contain" />
               </div>
               <div>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Livewire</h3>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Livewire</h3>
               </div>
             </div>
           </div>
