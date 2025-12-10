@@ -67,6 +67,13 @@
     <!-- TALL Stack Section -->
     <section class="py-16 md:py-20 bg-white dark:bg-gray-800">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+        <div class="text-center mb-12">
+          <h2 class="section-title">I Use TALL Stack for Development</h2>
+          <p class="section-subtitle max-w-2xl mx-auto">
+            A powerful combination of Tailwind CSS, Alpine.js, Laravel, and Livewire. This modern stack allows me to build responsive, interactive, and maintainable web applications with exceptional speed and efficiency.
+          </p>
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- Tailwind CSS -->
           <div class="group relative overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg p-6 border border-blue-200 dark:border-blue-700 hover:shadow-lg transition-all">
