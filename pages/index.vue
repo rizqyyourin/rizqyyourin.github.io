@@ -17,13 +17,13 @@
             <!-- Heading -->
             <div>
               <h1 class="text-5xl md:text-6xl font-black text-gray-900 dark:text-white leading-tight">
-                Hi, I'm a <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700">Laravel Specialist</span>
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700">Ahmad Rizqy Yourin</span>, a Laravel Developer
               </h1>
             </div>
 
             <!-- Description -->
             <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-md">
-              I create robust, scalable, and elegant web applications using Laravel ecosystem. Specialized in backend development with focus on clean code and best practices.
+              Full-stack Laravel developer creating robust, scalable, and elegant web applications. Specialized in backend development with expertise in Livewire, DaisyUI, and modern best practices.
             </p>
 
             <!-- CTA Buttons -->
@@ -51,7 +51,7 @@
                 <div class="absolute w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-lg"></div>
                 
                 <!-- Laravel Logo -->
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png" alt="Laravel" class="w-20 h-20 relative z-10" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png" alt="Laravel Framework Logo - Ahmad Rizqy Yourin specializes in Laravel development" class="w-20 h-20 relative z-10" />
               </div>
             </div>
           </div>
@@ -63,9 +63,9 @@
     <section id="about" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div class="text-center mb-12">
-          <h2 class="section-title">About Me</h2>
+          <h2 class="section-title">About Ahmad Rizqy Yourin</h2>
           <p class="section-subtitle max-w-2xl mx-auto">
-            Passionate Laravel developer with expertise in building enterprise-grade applications using modern tools and best practices from the Laravel ecosystem.
+            Passionate Laravel developer with expertise in building enterprise-grade applications using modern tools and best practices from the Laravel ecosystem. Available for freelance and full-time opportunities.
           </p>
         </div>
 
@@ -121,7 +121,7 @@
           <a href="https://e-voting.yourin.my.id/" target="_blank" rel="noopener noreferrer" class="group">
             <article class="h-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-lg transition-shadow flex flex-col group-hover:border-primary-500 dark:group-hover:border-primary-500">
               <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center border-b border-gray-200 dark:border-gray-700 overflow-hidden relative">
-                <img src="/images/e-vote.png" alt="E-Voting Platform" class="w-full h-full object-cover" />
+                <img src="/images/e-vote.png" alt="E-Voting Platform - Secure electronic voting system by Ahmad Rizqy Yourin" class="w-full h-full object-cover" />
               </div>
               <div class="p-5 flex flex-col flex-grow">
                 <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">E-Voting Platform</h3>
@@ -139,7 +139,7 @@
           <a href="https://erp.yourin.my.id/" target="_blank" rel="noopener noreferrer" class="group">
             <article class="h-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-lg transition-shadow flex flex-col group-hover:border-primary-500 dark:group-hover:border-primary-500">
               <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center border-b border-gray-200 dark:border-gray-700 overflow-hidden relative">
-                <img src="/images/erp.png" alt="ERP Minimal" class="w-full h-full object-cover" />
+                <img src="/images/erp.png" alt="ERP Minimal - Enterprise resource planning system by Ahmad Rizqy Yourin" class="w-full h-full object-cover" />
               </div>
               <div class="p-5 flex flex-col flex-grow">
                 <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">ERP Minimal</h3>
@@ -487,5 +487,82 @@
 </template>
 
 <script setup lang="ts">
+import { useHead } from '#app'
+
+// Structured data for projects
+const projectsSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Ahmad Rizqy Yourin - Featured Projects',
+  description: 'Portfolio of Laravel projects by Ahmad Rizqy Yourin',
+  mainEntity: [
+    {
+      '@type': 'SoftwareApplication',
+      name: 'E-Voting Platform',
+      url: 'https://e-voting.yourin.my.id/',
+      description: 'Secure and transparent electronic voting platform with real-time result tracking, voter authentication, and comprehensive audit trails',
+      applicationCategory: 'Utility',
+      operatingSystem: 'Web'
+    },
+    {
+      '@type': 'SoftwareApplication',
+      name: 'ERP Minimal',
+      url: 'https://erp.yourin.my.id/',
+      description: 'Lightweight enterprise resource planning system with inventory management, sales tracking, and financial reporting',
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Web'
+    },
+    {
+      '@type': 'SoftwareApplication',
+      name: 'QPay - QR Code Payment Platform',
+      url: 'https://qpay.yourin.my.id/',
+      description: 'SaaS platform for generating QR codes for products with seamless checkout experience',
+      applicationCategory: 'Utility',
+      operatingSystem: 'Web'
+    }
+  ]
+}
+
+// Breadcrumb schema
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://yourin.my.id'
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'About',
+      item: 'https://yourin.my.id#about'
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Projects',
+      item: 'https://yourin.my.id#projects'
+    }
+  ]
+}
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(projectsSchema),
+      key: 'schema-projects'
+    },
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(breadcrumbSchema),
+      key: 'schema-breadcrumb'
+    }
+  ]
+})
+
 // No component imports needed - using pure Flowbite/Tailwind
 </script>
