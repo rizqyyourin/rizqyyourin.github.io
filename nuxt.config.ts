@@ -39,12 +39,6 @@ export default defineNuxtConfig({
     },
     output: {
       publicDir: 'docs'
-    },
-    storage: {
-      fs: {
-        driver: 'fs',
-        base: './docs'
-      }
     }
   },
 
@@ -142,9 +136,10 @@ export default defineNuxtConfig({
     }
   },
 
-  // Experimental features
+  // Experimental features - disable payload extraction to avoid dev.json 404
   experimental: {
-    payloadExtraction: false
+    payloadExtraction: false,
+    renderJsonPayloads: false
   },
 
   // Build configuration
