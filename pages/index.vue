@@ -17,13 +17,18 @@
             <!-- Heading -->
             <div>
               <h1 class="text-5xl md:text-6xl font-black text-gray-900 dark:text-white leading-tight">
-                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700">Ahmad Rizqy Yourin</span>, a Laravel Developer
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700">Ahmad Rizqy Yourin</span>.
               </h1>
             </div>
 
+            <!-- Subtitle -->
+            <p class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
+              A Fullstack Laravel Developer
+            </p>
+
             <!-- Description -->
             <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-md">
-              Full-stack Laravel developer creating robust, scalable, and elegant web applications. Specialized in backend development with expertise in Livewire, DaisyUI, and modern best practices.
+              Crafting robust, scalable web applications with expertise in backend development, Livewire, and modern best practices.
             </p>
 
             <!-- CTA Buttons -->
