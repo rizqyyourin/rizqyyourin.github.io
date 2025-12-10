@@ -248,74 +248,170 @@
         <div class="text-center mb-16">
           <h2 class="section-title">My Tech Stack</h2>
           <p class="section-subtitle max-w-2xl mx-auto">
-            Specialized in the TALL Stack - a modern, full-stack JavaScript solution for building amazing web applications.
+            Specialized in the TALL Stack - a modern, full-stack solution for building amazing web applications.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <!-- Tailwind CSS -->
-          <div class="group relative">
-            <div class="absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-600 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur"></div>
-            <div class="relative bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 group-hover:border-primary-500 dark:group-hover:border-primary-500 transition-all">
-              <div class="w-16 h-16 rounded-lg bg-gradient-to-br from-cyan-100 to-cyan-50 dark:from-cyan-900/30 dark:to-cyan-900/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <svg class="w-8 h-8" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 2C10.6 2 3 9.6 3 19s7.6 17 17 17 17-7.6 17-17-7.6-17-17-17zm0 2c8.3 0 15 6.7 15 15s-6.7 15-15 15S5 27.3 5 19 11.7 4 20 4z" fill="#06b6d4"/>
-                  <path d="M10 14h20c.6 0 1 .4 1 1s-.4 1-1 1H10c-.6 0-1-.4-1-1s.4-1 1-1zm0 8h20c.6 0 1 .4 1 1s-.4 1-1 1H10c-.6 0-1-.4-1-1s.4-1 1-1z" fill="#06b6d4"/>
-                </svg>
+        <!-- Carousel Container -->
+        <div x-data="tallStackCarousel()" class="relative">
+          <!-- Main Carousel -->
+          <div class="relative overflow-hidden">
+            <div class="flex transition-transform duration-500 ease-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
+              <!-- Tailwind CSS -->
+              <div class="w-full flex-shrink-0 px-2 md:px-4">
+                <div class="group relative h-full">
+                  <div class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-cyan-500 rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300 blur-xl"></div>
+                  <div class="relative bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-gray-200 dark:border-gray-700 group-hover:border-cyan-500 dark:group-hover:border-cyan-400 transition-all h-full flex flex-col justify-between min-h-96">
+                    <div>
+                      <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-cyan-100 to-cyan-50 dark:from-cyan-900/30 dark:to-cyan-900/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20 2C10.6 2 3 9.6 3 19s7.6 17 17 17 17-7.6 17-17-7.6-17-17-17zm0 2c8.3 0 15 6.7 15 15s-6.7 15-15 15S5 27.3 5 19 11.7 4 20 4z" fill="#06b6d4"/>
+                          <path d="M10 14h20c.6 0 1 .4 1 1s-.4 1-1 1H10c-.6 0-1-.4-1-1s.4-1 1-1zm0 8h20c.6 0 1 .4 1 1s-.4 1-1 1H10c-.6 0-1-.4-1-1s.4-1 1-1z" fill="#06b6d4"/>
+                        </svg>
+                      </div>
+                      <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Tailwind CSS</h3>
+                      <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">Utility-first CSS framework for rapid UI development with minimal custom CSS.</p>
+                      <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                          <svg class="w-5 h-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Responsive Design Made Easy</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                          <svg class="w-5 h-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Dark Mode Support</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                          <svg class="w-5 h-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Highly Customizable</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 class="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Tailwind CSS</h3>
-              <p class="text-sm text-center text-gray-600 dark:text-gray-400">Utility-first CSS framework for rapid UI development</p>
+
+              <!-- Alpine.js -->
+              <div class="w-full flex-shrink-0 px-2 md:px-4">
+                <div class="group relative h-full">
+                  <div class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300 blur-xl"></div>
+                  <div class="relative bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-gray-200 dark:border-gray-700 group-hover:border-emerald-500 dark:group-hover:border-emerald-400 transition-all h-full flex flex-col justify-between min-h-96">
+                    <div>
+                      <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-emerald-100 to-emerald-50 dark:from-emerald-900/30 dark:to-emerald-900/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20 3L7 15v10c0 8.8 13 12 13 12s13-3.2 13-12V15L20 3z" stroke="#10b981" stroke-width="2" stroke-linejoin="round"/>
+                          <path d="M20 3v24M10 15h20" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                      </div>
+                      <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Alpine.js</h3>
+                      <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">Lightweight JavaScript library for adding interactivity without the complexity.</p>
+                      <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                          <svg class="w-5 h-5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Lightweight & Fast</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                          <svg class="w-5 h-5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Minimal Learning Curve</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                          <svg class="w-5 h-5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>DOM Manipulation Made Easy</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Laravel -->
+              <div class="w-full flex-shrink-0 px-2 md:px-4">
+                <div class="group relative h-full">
+                  <div class="absolute inset-0 bg-gradient-to-r from-red-400 to-red-500 rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300 blur-xl"></div>
+                  <div class="relative bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-gray-200 dark:border-gray-700 group-hover:border-red-500 dark:group-hover:border-red-400 transition-all h-full flex flex-col justify-between min-h-96">
+                    <div>
+                      <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-red-100 to-red-50 dark:from-red-900/30 dark:to-red-900/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M38.2 13.6c0-.7-.4-1.4-1.1-1.8L20.9 2.1c-.7-.4-1.5-.4-2.2 0L3 11.8c-.7.4-1.1 1.1-1.1 1.8v13c0 .7.4 1.4 1.1 1.8l16.2 9.7c.4.2.8.3 1.1.3s.8-.1 1.1-.3l16.2-9.7c.7-.4 1.1-1.1 1.1-1.8v-13zm-17.6 20L6.5 25.6v-11l14.1-8.4 14.1 8.4v11l-14.1 8.4z" fill="#ef4444"/>
+                        </svg>
+                      </div>
+                      <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Laravel</h3>
+                      <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">Elegant backend framework with batteries included for building robust APIs and servers.</p>
+                      <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                          <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Built-in Authentication</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                          <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Powerful ORM (Eloquent)</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                          <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Rich Ecosystem</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Livewire -->
+              <div class="w-full flex-shrink-0 px-2 md:px-4">
+                <div class="group relative h-full">
+                  <div class="absolute inset-0 bg-gradient-to-r from-violet-400 to-violet-500 rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300 blur-xl"></div>
+                  <div class="relative bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-gray-200 dark:border-gray-700 group-hover:border-violet-500 dark:group-hover:border-violet-400 transition-all h-full flex flex-col justify-between min-h-96">
+                    <div>
+                      <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-violet-100 to-violet-50 dark:from-violet-900/30 dark:to-violet-900/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="20" cy="20" r="18" stroke="#a78bfa" stroke-width="2"/>
+                          <path d="M20 8v24M8 20h24" stroke="#a78bfa" stroke-width="2" stroke-linecap="round"/>
+                          <circle cx="20" cy="20" r="4" fill="#a78bfa"/>
+                        </svg>
+                      </div>
+                      <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Livewire</h3>
+                      <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">Full-stack components framework for building dynamic interfaces without leaving PHP.</p>
+                      <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                          <svg class="w-5 h-5 text-violet-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Reactive Components</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                          <svg class="w-5 h-5 text-violet-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>Real-time Updates</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                          <svg class="w-5 h-5 text-violet-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>No JavaScript Required</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Alpine.js -->
-          <div class="group relative">
-            <div class="absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-600 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur"></div>
-            <div class="relative bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 group-hover:border-primary-500 dark:group-hover:border-primary-500 transition-all">
-              <div class="w-16 h-16 rounded-lg bg-gradient-to-br from-emerald-100 to-emerald-50 dark:from-emerald-900/30 dark:to-emerald-900/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <svg class="w-8 h-8" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 3L7 15v10c0 8.8 13 12 13 12s13-3.2 13-12V15L20 3z" stroke="#10b981" stroke-width="2" stroke-linejoin="round"/>
-                  <path d="M20 3v24M10 15h20" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Alpine.js</h3>
-              <p class="text-sm text-center text-gray-600 dark:text-gray-400">Lightweight JavaScript for interactive components</p>
+          <!-- Navigation Buttons -->
+          <div class="flex items-center justify-center gap-4 mt-8">
+            <button @click="prev()" class="p-3 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-primary-500 hover:text-white dark:hover:bg-primary-500 transition-all duration-200 group">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            
+            <!-- Dots Indicator -->
+            <div class="flex gap-2">
+              <template x-for="(item, index) in items" :key="index">
+                <button @click="currentIndex = index" :class="currentIndex === index ? 'bg-primary-600 w-8' : 'bg-gray-300 dark:bg-gray-600'" class="h-2 rounded-full transition-all duration-300"></button>
+              </template>
             </div>
-          </div>
-
-          <!-- Laravel -->
-          <div class="group relative">
-            <div class="absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-600 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur"></div>
-            <div class="relative bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 group-hover:border-primary-500 dark:group-hover:border-primary-500 transition-all">
-              <div class="w-16 h-16 rounded-lg bg-gradient-to-br from-red-100 to-red-50 dark:from-red-900/30 dark:to-red-900/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <svg class="w-8 h-8" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M38.2 13.6c0-.7-.4-1.4-1.1-1.8L20.9 2.1c-.7-.4-1.5-.4-2.2 0L3 11.8c-.7.4-1.1 1.1-1.1 1.8v13c0 .7.4 1.4 1.1 1.8l16.2 9.7c.4.2.8.3 1.1.3s.8-.1 1.1-.3l16.2-9.7c.7-.4 1.1-1.1 1.1-1.8v-13zm-17.6 20L6.5 25.6v-11l14.1-8.4 14.1 8.4v11l-14.1 8.4z" fill="#ef4444"/>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Laravel</h3>
-              <p class="text-sm text-center text-gray-600 dark:text-gray-400">Elegant backend framework for APIs and servers</p>
-            </div>
-          </div>
-
-          <!-- Livewire -->
-          <div class="group relative">
-            <div class="absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-600 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur"></div>
-            <div class="relative bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 group-hover:border-primary-500 dark:group-hover:border-primary-500 transition-all">
-              <div class="w-16 h-16 rounded-lg bg-gradient-to-br from-violet-100 to-violet-50 dark:from-violet-900/30 dark:to-violet-900/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <svg class="w-8 h-8" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="20" cy="20" r="18" stroke="#a78bfa" stroke-width="2"/>
-                  <path d="M20 8v24M8 20h24" stroke="#a78bfa" stroke-width="2" stroke-linecap="round"/>
-                  <circle cx="20" cy="20" r="4" fill="#a78bfa"/>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Livewire</h3>
-              <p class="text-sm text-center text-gray-600 dark:text-gray-400">Full-stack components for dynamic interfaces</p>
-            </div>
+            
+            <button @click="next()" class="p-3 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-primary-500 hover:text-white dark:hover:bg-primary-500 transition-all duration-200 group">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
           </div>
         </div>
 
         <!-- Why TALL Stack -->
-        <div class="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20 rounded-2xl p-8 md:p-12 border border-primary-200 dark:border-primary-800">
+        <div class="mt-16 bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20 rounded-2xl p-8 md:p-12 border border-primary-200 dark:border-primary-800">
           <h3 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">Why TALL Stack?</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="flex gap-4">
@@ -325,8 +421,8 @@
                 </div>
               </div>
               <div>
-                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Full-Stack JavaScript</h4>
-                <p class="text-gray-600 dark:text-gray-400 mt-1">Single language across frontend and backend</p>
+                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Full-Stack Solution</h4>
+                <p class="text-gray-600 dark:text-gray-400 mt-1">Everything you need from styling to backend logic</p>
               </div>
             </div>
             <div class="flex gap-4">
@@ -337,7 +433,7 @@
               </div>
               <div>
                 <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Rapid Development</h4>
-                <p class="text-gray-600 dark:text-gray-400 mt-1">Build full features without page reloads</p>
+                <p class="text-gray-600 dark:text-gray-400 mt-1">Build features faster with less boilerplate code</p>
               </div>
             </div>
             <div class="flex gap-4">
@@ -347,8 +443,8 @@
                 </div>
               </div>
               <div>
-                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Minimal Learning Curve</h4>
-                <p class="text-gray-600 dark:text-gray-400 mt-1">Lightweight tools focused on developer experience</p>
+                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Developer Experience</h4>
+                <p class="text-gray-600 dark:text-gray-400 mt-1">Minimal learning curve with excellent documentation</p>
               </div>
             </div>
             <div class="flex gap-4">
@@ -358,8 +454,8 @@
                 </div>
               </div>
               <div>
-                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Proven Stack</h4>
-                <p class="text-gray-600 dark:text-gray-400 mt-1">Battle-tested by thousands of developers</p>
+                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Proven in Production</h4>
+                <p class="text-gray-600 dark:text-gray-400 mt-1">Used by thousands of developers worldwide</p>
               </div>
             </div>
           </div>
@@ -622,7 +718,24 @@
 </template>
 
 <script setup lang="ts">
-import { useHead } from '#app'
+// TALL Stack Carousel Function
+function tallStackCarousel() {
+  return {
+    currentIndex: 0,
+    items: [
+      { name: 'Tailwind CSS' },
+      { name: 'Alpine.js' },
+      { name: 'Laravel' },
+      { name: 'Livewire' }
+    ],
+    next() {
+      this.currentIndex = (this.currentIndex + 1) % this.items.length
+    },
+    prev() {
+      this.currentIndex = (this.currentIndex - 1 + this.items.length) % this.items.length
+    }
+  }
+}
 
 // Structured data for projects
 const projectsSchema = {
@@ -683,21 +796,6 @@ const breadcrumbSchema = {
     }
   ]
 }
-
-useHead({
-  script: [
-    {
-      type: 'application/ld+json',
-      innerHTML: JSON.stringify(projectsSchema),
-      key: 'schema-projects'
-    },
-    {
-      type: 'application/ld+json',
-      innerHTML: JSON.stringify(breadcrumbSchema),
-      key: 'schema-breadcrumb'
-    }
-  ]
-})
 
 // No component imports needed - using pure Flowbite/Tailwind
 </script>
