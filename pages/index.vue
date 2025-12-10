@@ -126,53 +126,6 @@
       </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <div class="text-center mb-12">
-          <h2 class="section-title">About Ahmad Rizqy Yourin</h2>
-          <p class="section-subtitle max-w-2xl mx-auto">
-            Passionate Laravel developer with expertise in building enterprise-grade applications using modern tools and best practices from the Laravel ecosystem. Available for freelance and full-time opportunities.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div class="p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
-            <div class="flex justify-center mb-4">
-              <div class="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
-                <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
-              </div>
-            </div>
-            <h3 class="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Scalable Backend</h3>
-            <p class="text-center text-gray-600 dark:text-gray-400">Building robust, scalable applications with Laravel, handling complex business logic efficiently.</p>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
-            <div class="flex justify-center mb-4">
-              <div class="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
-                <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
-              </div>
-            </div>
-            <h3 class="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Clean Architecture</h3>
-            <p class="text-center text-gray-600 dark:text-gray-400">Implementing best practices with SOLID principles, design patterns, and clean code architecture.</p>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
-            <div class="flex justify-center mb-4">
-              <div class="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
-                <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-              </div>
-            </div>
-            <h3 class="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Ecosystem Expertise</h3>
-            <p class="text-center text-gray-600 dark:text-gray-400">Proficient with Laravel, Livewire, Filament, Blade, and the entire Laravel ecosystem tools.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Projects Section -->
     <section id="projects" class="py-20 md:py-32 bg-white dark:bg-gray-900">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
