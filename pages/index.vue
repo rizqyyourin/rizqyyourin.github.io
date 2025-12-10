@@ -154,23 +154,23 @@
           </a>
 
           <!-- Project 3 -->
-          <article class="h-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-lg transition-shadow flex flex-col">
-            <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center border-b border-gray-200 dark:border-gray-700">
-              <div class="text-center">
-                <svg class="w-12 h-12 text-gray-400 dark:text-gray-500 mx-auto mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5zm10.5-11.25h.008v.008h-.008v-.008zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"/></svg>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Project Image</p>
+          <a href="https://qpay.yourin.my.id/" target="_blank" rel="noopener noreferrer" class="group">
+            <article class="h-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-lg transition-shadow flex flex-col group-hover:border-primary-500 dark:group-hover:border-primary-500">
+              <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center border-b border-gray-200 dark:border-gray-700 overflow-hidden relative">
+                <img src="/images/qpay.png" alt="QPay" class="w-full h-full object-cover" />
               </div>
-            </div>
-            <div class="p-5 flex flex-col flex-grow">
-              <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">RESTful API Service</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">Scalable REST API with authentication, rate limiting, caching, and comprehensive API documentation.</p>
-              <div class="flex flex-wrap gap-2">
-                <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Laravel</span>
-                <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">API</span>
-                <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Redis</span>
+              <div class="p-5 flex flex-col flex-grow">
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">QPay - QR Code Payment Platform</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">SaaS platform that enables merchants to generate QR codes for products. Customers scan the QR code to view product details and checkout seamlessly at the cashier with an easy payment experience.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Laravel</span>
+                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Livewire</span>
+                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">DaisyUI</span>
+                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">SQLite</span>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </a>
 
           <!-- Project 4 -->
           <article class="h-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-lg transition-shadow flex flex-col">
