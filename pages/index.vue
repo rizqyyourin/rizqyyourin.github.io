@@ -1,57 +1,70 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section id="home" class="relative overflow-hidden py-20 md:py-32 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+    <section id="home" class="relative overflow-hidden py-20 md:py-40 bg-gradient-hero">
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute -top-40 -right-40 w-80 h-80 bg-primary-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-primary-500/5 rounded-full blur-3xl"></div>
+      </div>
+      
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <!-- Left Content -->
-          <div class="space-y-6 animate-fade-in">
+          <div class="space-y-8 animate-fade-in">
             <!-- Badge -->
-            <a href="https://www.upwork.com/freelancers/~01103c6049d69f345f?mp_source=share" target="_blank" rel="noopener noreferrer" class="w-fit">
-              <span class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-primary-700 bg-primary-100 dark:text-primary-300 dark:bg-primary-900/30 rounded-full hover:bg-primary-200 dark:hover:bg-primary-900/50 transition-all">
-                <span>Hire Me</span>
-                <svg class="w-4 h-4" stroke="currentColor" stroke-width="2" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"/></svg>
-              </span>
+            <a href="https://www.upwork.com/freelancers/~01103c6049d69f345f?mp_source=share" target="_blank" rel="noopener noreferrer" class="w-fit group">
+              <div class="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-primary-700 bg-primary-100 dark:text-primary-300 dark:bg-primary-900/30 rounded-full hover:bg-primary-200 dark:hover:bg-primary-900/50 transition-all duration-300 group-hover:shadow-lg group-hover:scale-105 border border-primary-200 dark:border-primary-800">
+                <span>Hire Me on Upwork</span>
+                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" stroke="currentColor" stroke-width="2" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"/></svg>
+              </div>
             </a>
             
             <!-- Heading -->
             <div>
-              <h1 class="text-5xl md:text-6xl font-black text-gray-900 dark:text-white leading-tight">
-                Hi, I'm a <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700">Laravel Specialist</span>
+              <h1 class="text-5xl md:text-7xl font-black text-gray-900 dark:text-white leading-tight">
+                <span class="block">Hi, I'm a</span>
+                <span class="text-gradient animate-fade-in-up animation-delay-100">Laravel</span>
+                <span class="block animate-fade-in-up animation-delay-200">Specialist</span>
               </h1>
             </div>
 
             <!-- Description -->
-            <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-md">
-              I create robust, scalable, and elegant web applications using Laravel ecosystem. Specialized in backend development with focus on clean code and best practices.
+            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-lg animate-fade-in-up animation-delay-300">
+              I create robust, scalable, and elegant web applications using the Laravel ecosystem. Specialized in backend development with focus on clean code, best practices, and building enterprise-grade solutions.
             </p>
 
             <!-- CTA Buttons -->
-            <div class="flex flex-wrap gap-4 pt-4 max-w-xs">
-              <a href="#projects" class="inline-flex items-center px-6 py-3 font-medium text-white bg-primary-600 hover:bg-primary-700 rounded-lg transition-all shadow-lg hover:shadow-xl">
-                View Projects
+            <div class="flex flex-wrap gap-4 pt-4 animate-fade-in-up animation-delay-400">
+              <a href="#projects" class="btn btn-lg btn-primary rounded-xl font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m9 12 2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+                View My Projects
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-outline btn-primary rounded-xl font-semibold hover:shadow-xl transition-all duration-300">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
               </a>
             </div>
           </div>
 
           <!-- Right Image -->
           <div class="hidden md:flex justify-center items-center">
-            <div class="relative w-full max-w-sm h-96 bg-gradient-to-br from-primary-500 to-primary-700 rounded-3xl flex items-center justify-center overflow-hidden shadow-2xl group">
-              <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative w-full max-w-sm h-96 bg-gradient-to-br from-primary-500 to-primary-700 rounded-3xl flex items-center justify-center overflow-hidden shadow-2xl group animate-scale-in">
+              <!-- Glowing gradient overlay -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-white/20 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
               
               <!-- Animated Laravel Element -->
               <div class="relative w-48 h-48 flex items-center justify-center">
                 <!-- Outer rotating ring -->
-                <div class="absolute inset-0 border-4 border-transparent border-t-white border-r-white rounded-full animate-spin" style="animation-duration: 8s;"></div>
+                <div class="absolute inset-0 border-4 border-transparent border-t-white border-r-white rounded-full animate-spin" style="animation-duration: 10s;"></div>
                 
                 <!-- Middle pulsing ring -->
-                <div class="absolute inset-6 border-2 border-white/30 rounded-full animate-pulse"></div>
+                <div class="absolute inset-6 border-2 border-white/30 rounded-full animate-pulse" style="animation-duration: 3s;"></div>
                 
                 <!-- White background circle for logo -->
-                <div class="absolute w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-lg"></div>
+                <div class="absolute w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-2xl group-hover:shadow-primary-500/50"></div>
                 
                 <!-- Laravel Logo -->
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png" alt="Laravel" class="w-20 h-20 relative z-10" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png" alt="Laravel" class="w-20 h-20 relative z-10 group-hover:scale-110 transition-transform duration-500" />
               </div>
             </div>
           </div>
@@ -60,9 +73,9 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
+    <section id="about" class="py-16 md:py-28 bg-gradient-section">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <div class="text-center mb-12">
+        <div class="text-center mb-16">
           <h2 class="section-title">About Me</h2>
           <p class="section-subtitle max-w-2xl mx-auto">
             Passionate Laravel developer with expertise in building enterprise-grade applications using modern tools and best practices from the Laravel ecosystem.
@@ -71,36 +84,42 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Card 1 -->
-          <div class="p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
-            <div class="flex justify-center mb-4">
-              <div class="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
-                <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
+          <div class="group card card-border hover:border-primary-500 dark:hover:border-primary-500 hover:shadow-xl hover:shadow-primary-500/10 dark:hover:shadow-primary-500/20 transition-all duration-300 animate-fade-in-up">
+            <figure class="flex justify-center pt-8">
+              <div class="p-4 bg-gradient-to-br from-primary-100 to-primary-50 dark:from-primary-900/30 dark:to-primary-900/10 rounded-2xl group-hover:from-primary-200 dark:group-hover:from-primary-800/40 transition-all duration-300">
+                <svg class="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
               </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title text-2xl">Scalable Backend</h3>
+              <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Building robust, scalable applications with Laravel, handling complex business logic efficiently and with precision.</p>
             </div>
-            <h3 class="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Scalable Backend</h3>
-            <p class="text-center text-gray-600 dark:text-gray-400">Building robust, scalable applications with Laravel, handling complex business logic efficiently.</p>
           </div>
 
           <!-- Card 2 -->
-          <div class="p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
-            <div class="flex justify-center mb-4">
-              <div class="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
-                <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          <div class="group card card-border hover:border-primary-500 dark:hover:border-primary-500 hover:shadow-xl hover:shadow-primary-500/10 dark:hover:shadow-primary-500/20 transition-all duration-300 animate-fade-in-up animation-delay-100">
+            <figure class="flex justify-center pt-8">
+              <div class="p-4 bg-gradient-to-br from-primary-100 to-primary-50 dark:from-primary-900/30 dark:to-primary-900/10 rounded-2xl group-hover:from-primary-200 dark:group-hover:from-primary-800/40 transition-all duration-300">
+                <svg class="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
               </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title text-2xl">Clean Architecture</h3>
+              <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Implementing best practices with SOLID principles, design patterns, and clean code architecture for maintainability.</p>
             </div>
-            <h3 class="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Clean Architecture</h3>
-            <p class="text-center text-gray-600 dark:text-gray-400">Implementing best practices with SOLID principles, design patterns, and clean code architecture.</p>
           </div>
 
           <!-- Card 3 -->
-          <div class="p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
-            <div class="flex justify-center mb-4">
-              <div class="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
-                <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          <div class="group card card-border hover:border-primary-500 dark:hover:border-primary-500 hover:shadow-xl hover:shadow-primary-500/10 dark:hover:shadow-primary-500/20 transition-all duration-300 animate-fade-in-up animation-delay-200">
+            <figure class="flex justify-center pt-8">
+              <div class="p-4 bg-gradient-to-br from-primary-100 to-primary-50 dark:from-primary-900/30 dark:to-primary-900/10 rounded-2xl group-hover:from-primary-200 dark:group-hover:from-primary-800/40 transition-all duration-300">
+                <svg class="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
               </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title text-2xl">Ecosystem Expertise</h3>
+              <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Proficient with Laravel, Livewire, Filament, Blade, and the entire Laravel ecosystem of modern tools.</p>
             </div>
-            <h3 class="text-xl font-bold text-center text-gray-900 dark:text-white mb-2">Ecosystem Expertise</h3>
-            <p class="text-center text-gray-600 dark:text-gray-400">Proficient with Laravel, Livewire, Filament, Blade, and the entire Laravel ecosystem tools.</p>
           </div>
         </div>
       </div>
@@ -109,122 +128,122 @@
     <!-- Projects Section -->
     <section id="projects" class="py-20 md:py-32 bg-white dark:bg-gray-900">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <div class="text-center mb-16">
+        <div class="text-center mb-16 animate-fade-in">
           <h2 class="section-title">Featured Projects</h2>
           <p class="section-subtitle max-w-2xl mx-auto">
             Showcase of Laravel applications demonstrating expertise in backend development, API design, and best practices.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Project 1 -->
-          <a href="https://e-voting.yourin.my.id/" target="_blank" rel="noopener noreferrer" class="group">
-            <article class="h-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-lg transition-shadow flex flex-col group-hover:border-primary-500 dark:group-hover:border-primary-500">
-              <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center border-b border-gray-200 dark:border-gray-700 overflow-hidden relative">
-                <img src="/images/e-vote.png" alt="E-Voting Platform" class="w-full h-full object-cover" />
-              </div>
-              <div class="p-5 flex flex-col flex-grow">
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">E-Voting Platform</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">Secure and transparent electronic voting platform with real-time result tracking, voter authentication, and comprehensive audit trails for trustworthy elections.</p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Laravel</span>
-                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Livewire</span>
-                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">SQLite</span>
+          <a href="https://e-voting.yourin.my.id/" target="_blank" rel="noopener noreferrer" class="group animate-fade-in-up">
+            <article class="card card-border group-hover:border-primary-500 dark:group-hover:border-primary-500 group-hover:shadow-xl group-hover:shadow-primary-500/10 dark:group-hover:shadow-primary-500/20 transition-all duration-300 h-full overflow-hidden flex flex-col">
+              <figure class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center overflow-hidden relative">
+                <img src="/images/e-vote.png" alt="E-Voting Platform" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+              </figure>
+              <div class="card-body flex flex-col flex-grow">
+                <h3 class="card-title text-lg">E-Voting Platform</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 flex-grow leading-relaxed">Secure and transparent electronic voting platform with real-time result tracking, voter authentication, and comprehensive audit trails for trustworthy elections.</p>
+                <div class="card-actions justify-start gap-2 mt-auto pt-4">
+                  <div class="badge badge-primary">Laravel</div>
+                  <div class="badge badge-primary">Livewire</div>
+                  <div class="badge badge-primary">SQLite</div>
                 </div>
               </div>
             </article>
           </a>
 
           <!-- Project 2 -->
-          <a href="https://erp.yourin.my.id/" target="_blank" rel="noopener noreferrer" class="group">
-            <article class="h-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-lg transition-shadow flex flex-col group-hover:border-primary-500 dark:group-hover:border-primary-500">
-              <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center border-b border-gray-200 dark:border-gray-700 overflow-hidden relative">
-                <img src="/images/erp.png" alt="ERP Minimal" class="w-full h-full object-cover" />
-              </div>
-              <div class="p-5 flex flex-col flex-grow">
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">ERP Minimal</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">Lightweight enterprise resource planning system with inventory management, sales tracking, and financial reporting for small businesses.</p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Laravel</span>
-                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Livewire</span>
-                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">SQLite</span>
+          <a href="https://erp.yourin.my.id/" target="_blank" rel="noopener noreferrer" class="group animate-fade-in-up animation-delay-100">
+            <article class="card card-border group-hover:border-primary-500 dark:group-hover:border-primary-500 group-hover:shadow-xl group-hover:shadow-primary-500/10 dark:group-hover:shadow-primary-500/20 transition-all duration-300 h-full overflow-hidden flex flex-col">
+              <figure class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center overflow-hidden relative">
+                <img src="/images/erp.png" alt="ERP Minimal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+              </figure>
+              <div class="card-body flex flex-col flex-grow">
+                <h3 class="card-title text-lg">ERP Minimal</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 flex-grow leading-relaxed">Lightweight enterprise resource planning system with inventory management, sales tracking, and financial reporting for small businesses.</p>
+                <div class="card-actions justify-start gap-2 mt-auto pt-4">
+                  <div class="badge badge-primary">Laravel</div>
+                  <div class="badge badge-primary">Livewire</div>
+                  <div class="badge badge-primary">SQLite</div>
                 </div>
               </div>
             </article>
           </a>
 
-          <!-- Project 3 -->
-          <a href="https://qpay.yourin.my.id/" target="_blank" rel="noopener noreferrer" class="group">
-            <article class="h-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-lg transition-shadow flex flex-col group-hover:border-primary-500 dark:group-hover:border-primary-500">
-              <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center border-b border-gray-200 dark:border-gray-700 overflow-hidden relative">
-                <img src="/images/qpay.png" alt="QPay" class="w-full h-full object-cover" />
-              </div>
-              <div class="p-5 flex flex-col flex-grow">
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">QPay - QR Code Payment Platform</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">SaaS platform that enables merchants to generate QR codes for products. Customers scan the QR code to view product details and checkout seamlessly at the cashier with an easy payment experience.</p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Laravel</span>
-                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Livewire</span>
-                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">DaisyUI</span>
-                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">SQLite</span>
+          <!-- Project 3 - QPay -->
+          <a href="https://qpay.yourin.my.id/" target="_blank" rel="noopener noreferrer" class="group animate-fade-in-up animation-delay-200">
+            <article class="card card-border group-hover:border-primary-500 dark:group-hover:border-primary-500 group-hover:shadow-xl group-hover:shadow-primary-500/10 dark:group-hover:shadow-primary-500/20 transition-all duration-300 h-full overflow-hidden flex flex-col">
+              <figure class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center overflow-hidden relative">
+                <img src="/images/qpay.png" alt="QPay" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+              </figure>
+              <div class="card-body flex flex-col flex-grow">
+                <h3 class="card-title text-lg">QPay - QR Code Payment</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 flex-grow leading-relaxed">SaaS platform that enables merchants to generate QR codes for products. Customers scan the QR code to view product details and checkout seamlessly at the cashier with an easy payment experience.</p>
+                <div class="card-actions justify-start gap-2 mt-auto pt-4">
+                  <div class="badge badge-primary">Laravel</div>
+                  <div class="badge badge-primary">Livewire</div>
+                  <div class="badge badge-primary">DaisyUI</div>
+                  <div class="badge badge-primary">SQLite</div>
                 </div>
               </div>
             </article>
           </a>
 
           <!-- Project 4 -->
-          <article class="h-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-lg transition-shadow flex flex-col">
-            <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center border-b border-gray-200 dark:border-gray-700">
+          <article class="card card-border hover:border-primary-500 dark:hover:border-primary-500 hover:shadow-xl hover:shadow-primary-500/10 dark:hover:shadow-primary-500/20 transition-all duration-300 h-full overflow-hidden flex flex-col animate-fade-in-up">
+            <figure class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center">
               <div class="text-center">
-                <svg class="w-12 h-12 text-gray-400 dark:text-gray-500 mx-auto mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5zm10.5-11.25h.008v.008h-.008v-.008zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"/></svg>
+                <svg class="w-12 h-12 text-gray-400 dark:text-gray-500 mx-auto mb-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5zm10.5-11.25h.008v.008h-.008v-.008zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"/></svg>
                 <p class="text-xs text-gray-500 dark:text-gray-400">Project Image</p>
               </div>
-            </div>
-            <div class="p-5 flex flex-col flex-grow">
-              <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Multi-Tenant SaaS</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">Multi-tenant application with isolated databases, subscription billing, and feature management.</p>
-              <div class="flex flex-wrap gap-2">
-                <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Laravel</span>
-                <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Stripe</span>
-                <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">MySQL</span>
+            </figure>
+            <div class="card-body flex flex-col flex-grow">
+              <h3 class="card-title text-lg">Multi-Tenant SaaS</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 flex-grow leading-relaxed">Multi-tenant application with isolated databases, subscription billing, and feature management.</p>
+              <div class="card-actions justify-start gap-2 mt-auto pt-4">
+                <div class="badge badge-primary">Laravel</div>
+                <div class="badge badge-primary">Stripe</div>
+                <div class="badge badge-primary">MySQL</div>
               </div>
             </div>
           </article>
 
           <!-- Project 5 -->
-          <article class="h-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-lg transition-shadow flex flex-col">
-            <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center border-b border-gray-200 dark:border-gray-700">
+          <article class="card card-border hover:border-primary-500 dark:hover:border-primary-500 hover:shadow-xl hover:shadow-primary-500/10 dark:hover:shadow-primary-500/20 transition-all duration-300 h-full overflow-hidden flex flex-col animate-fade-in-up animation-delay-100">
+            <figure class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center">
               <div class="text-center">
-                <svg class="w-12 h-12 text-gray-400 dark:text-gray-500 mx-auto mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5zm10.5-11.25h.008v.008h-.008v-.008zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"/></svg>
+                <svg class="w-12 h-12 text-gray-400 dark:text-gray-500 mx-auto mb-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5zm10.5-11.25h.008v.008h-.008v-.008zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"/></svg>
                 <p class="text-xs text-gray-500 dark:text-gray-400">Project Image</p>
               </div>
-            </div>
-            <div class="p-5 flex flex-col flex-grow">
-              <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Real-time Chat Application</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">Real-time messaging system with WebSockets for instant notifications and live updates.</p>
-              <div class="flex flex-wrap gap-2">
-                <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Laravel</span>
-                <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">WebSocket</span>
-                <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Pusher</span>
+            </figure>
+            <div class="card-body flex flex-col flex-grow">
+              <h3 class="card-title text-lg">Real-time Chat Application</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 flex-grow leading-relaxed">Real-time messaging system with WebSockets for instant notifications and live updates.</p>
+              <div class="card-actions justify-start gap-2 mt-auto pt-4">
+                <div class="badge badge-primary">Laravel</div>
+                <div class="badge badge-primary">WebSocket</div>
+                <div class="badge badge-primary">Pusher</div>
               </div>
             </div>
           </article>
 
           <!-- Project 6 -->
-          <article class="h-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-lg transition-shadow flex flex-col">
-            <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center border-b border-gray-200 dark:border-gray-700">
+          <article class="card card-border hover:border-primary-500 dark:hover:border-primary-500 hover:shadow-xl hover:shadow-primary-500/10 dark:hover:shadow-primary-500/20 transition-all duration-300 h-full overflow-hidden flex flex-col animate-fade-in-up animation-delay-200">
+            <figure class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center">
               <div class="text-center">
-                <svg class="w-12 h-12 text-gray-400 dark:text-gray-500 mx-auto mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5zm10.5-11.25h.008v.008h-.008v-.008zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"/></svg>
+                <svg class="w-12 h-12 text-gray-400 dark:text-gray-500 mx-auto mb-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5zm10.5-11.25h.008v.008h-.008v-.008zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z"/></svg>
                 <p class="text-xs text-gray-500 dark:text-gray-400">Project Image</p>
               </div>
-            </div>
-            <div class="p-5 flex flex-col flex-grow">
-              <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Task Management System</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">Collaborative project management tool with teams, boards, and real-time collaboration features.</p>
-              <div class="flex flex-wrap gap-2">
-                <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Laravel</span>
-                <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Livewire</span>
-                <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">PostgreSQL</span>
+            </figure>
+            <div class="card-body flex flex-col flex-grow">
+              <h3 class="card-title text-lg">Task Management System</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 flex-grow leading-relaxed">Collaborative project management tool with teams, boards, and real-time collaboration features.</p>
+              <div class="card-actions justify-start gap-2 mt-auto pt-4">
+                <div class="badge badge-primary">Laravel</div>
+                <div class="badge badge-primary">Livewire</div>
+                <div class="badge badge-primary">PostgreSQL</div>
               </div>
             </div>
           </article>
@@ -233,9 +252,9 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 md:py-32 bg-gray-50 dark:bg-dark-800">
+    <section id="skills" class="py-20 md:py-32 bg-gradient-section">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <div class="text-center mb-16">
+        <div class="text-center mb-16 animate-fade-in">
           <h2 class="section-title">Skills & Expertise</h2>
           <p class="section-subtitle max-w-2xl mx-auto">
             Comprehensive toolkit spanning Laravel ecosystem, modern backend development, and DevOps practices.
@@ -243,160 +262,200 @@
         </div>
 
         <!-- Laravel Frameworks -->
-        <div class="mb-16">
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-2">
+        <div class="mb-20">
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-3 animate-fade-in-up">
             <span class="w-1 h-8 bg-gradient-to-b from-primary-500 to-primary-600 rounded-full"></span>
             Laravel Ecosystem
           </h3>
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             <!-- Laravel -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M38.2 13.6c0-.7-.4-1.4-1.1-1.8L20.9 2.1c-.7-.4-1.5-.4-2.2 0L3 11.8c-.7.4-1.1 1.1-1.1 1.8v13c0 .7.4 1.4 1.1 1.8l16.2 9.7c.4.2.8.3 1.1.3s.8-.1 1.1-.3l16.2-9.7c.7-.4 1.1-1.1 1.1-1.8v-13zm-17.6 20L6.5 25.6v-11l14.1-8.4 14.1 8.4v11l-14.1 8.4z" fill="#ef4444"/>
-                </svg>
+            <div class="group card card-border hover:border-primary-500 hover:shadow-xl transition-all duration-300 animate-fade-in-up" style="animation-delay: 50ms;">
+              <figure class="flex justify-center pt-6">
+                <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-white dark:bg-gray-700 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-all">
+                  <svg class="w-8 h-8 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M38.2 13.6c0-.7-.4-1.4-1.1-1.8L20.9 2.1c-.7-.4-1.5-.4-2.2 0L3 11.8c-.7.4-1.1 1.1-1.1 1.8v13c0 .7.4 1.4 1.1 1.8l16.2 9.7c.4.2.8.3 1.1.3s.8-.1 1.1-.3l16.2-9.7c.7-.4 1.1-1.1 1.1-1.8v-13zm-17.6 20L6.5 25.6v-11l14.1-8.4 14.1 8.4v11l-14.1 8.4z" fill="#ef4444"/>
+                  </svg>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h4 class="font-semibold text-gray-900 dark:text-white">Laravel</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Core Framework</p>
               </div>
-              <h4 class="font-semibold text-gray-900 dark:text-white">Laravel</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Core Framework</p>
             </div>
 
             <!-- Livewire -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="20" cy="20" r="18" stroke="#ef4444" stroke-width="2"/>
-                  <path d="M20 8v24M8 20h24" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
-                  <circle cx="20" cy="20" r="4" fill="#ef4444"/>
-                </svg>
+            <div class="group card card-border hover:border-primary-500 hover:shadow-xl transition-all duration-300 animate-fade-in-up" style="animation-delay: 100ms;">
+              <figure class="flex justify-center pt-6">
+                <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-white dark:bg-gray-700 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-all">
+                  <svg class="w-8 h-8 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="#ef4444" stroke-width="2"/>
+                    <path d="M20 8v24M8 20h24" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="20" cy="20" r="4" fill="#ef4444"/>
+                  </svg>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h4 class="font-semibold text-gray-900 dark:text-white">Livewire</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Reactive Components</p>
               </div>
-              <h4 class="font-semibold text-gray-900 dark:text-white">Livewire</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Reactive Components</p>
             </div>
 
             <!-- Filament -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="8" y="8" width="24" height="24" rx="2" stroke="#ef4444" stroke-width="2"/>
-                  <path d="M14 14h12M14 20h12M14 26h8" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
+            <div class="group card card-border hover:border-primary-500 hover:shadow-xl transition-all duration-300 animate-fade-in-up" style="animation-delay: 150ms;">
+              <figure class="flex justify-center pt-6">
+                <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-white dark:bg-gray-700 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-all">
+                  <svg class="w-8 h-8 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" y="8" width="24" height="24" rx="2" stroke="#ef4444" stroke-width="2"/>
+                    <path d="M14 14h12M14 20h12M14 26h8" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h4 class="font-semibold text-gray-900 dark:text-white">Filament</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Admin Panels</p>
               </div>
-              <h4 class="font-semibold text-gray-900 dark:text-white">Filament</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Admin Panels</p>
             </div>
 
             <!-- Lumen -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="20" cy="20" r="12" stroke="#ef4444" stroke-width="2"/>
-                  <circle cx="20" cy="20" r="8" fill="none" stroke="#ef4444" stroke-width="1.5"/>
-                  <circle cx="20" cy="20" r="4" fill="#ef4444"/>
-                </svg>
+            <div class="group card card-border hover:border-primary-500 hover:shadow-xl transition-all duration-300 animate-fade-in-up" style="animation-delay: 200ms;">
+              <figure class="flex justify-center pt-6">
+                <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-white dark:bg-gray-700 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-all">
+                  <svg class="w-8 h-8 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="12" stroke="#ef4444" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="8" fill="none" stroke="#ef4444" stroke-width="1.5"/>
+                    <circle cx="20" cy="20" r="4" fill="#ef4444"/>
+                  </svg>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h4 class="font-semibold text-gray-900 dark:text-white">Lumen</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Micro Framework</p>
               </div>
-              <h4 class="font-semibold text-gray-900 dark:text-white">Lumen</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Micro Framework</p>
             </div>
 
             <!-- Nova -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 2L38 10v20L20 38L2 30V10L20 2z" stroke="#ef4444" stroke-width="2"/>
-                  <circle cx="20" cy="20" r="4" fill="#ef4444"/>
-                </svg>
+            <div class="group card card-border hover:border-primary-500 hover:shadow-xl transition-all duration-300 animate-fade-in-up" style="animation-delay: 250ms;">
+              <figure class="flex justify-center pt-6">
+                <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-white dark:bg-gray-700 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-all">
+                  <svg class="w-8 h-8 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 2L38 10v20L20 38L2 30V10L20 2z" stroke="#ef4444" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="4" fill="#ef4444"/>
+                  </svg>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h4 class="font-semibold text-gray-900 dark:text-white">Nova</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Admin Interface</p>
               </div>
-              <h4 class="font-semibold text-gray-900 dark:text-white">Nova</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Admin Interface</p>
             </div>
           </div>
         </div>
 
         <!-- Backend & Databases -->
-        <div class="mb-16">
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-2">
+        <div class="mb-20">
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-3 animate-fade-in-up animation-delay-100">
             <span class="w-1 h-8 bg-gradient-to-b from-primary-500 to-primary-600 rounded-full"></span>
             Databases
           </h3>
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             <!-- MySQL -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="6" y="8" width="28" height="24" rx="2" stroke="#0051ba" stroke-width="2"/>
-                  <path d="M10 14h20M10 20h20M10 26h14" stroke="#0051ba" stroke-width="1.5" stroke-linecap="round"/>
-                  <circle cx="8" cy="14" r="1.5" fill="#0051ba"/>
-                  <circle cx="8" cy="20" r="1.5" fill="#0051ba"/>
-                  <circle cx="8" cy="26" r="1.5" fill="#0051ba"/>
-                </svg>
+            <div class="group card card-border hover:border-primary-500 hover:shadow-xl transition-all duration-300 animate-fade-in-up" style="animation-delay: 100ms;">
+              <figure class="flex justify-center pt-6">
+                <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-white dark:bg-gray-700 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-all">
+                  <svg class="w-8 h-8 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="8" width="28" height="24" rx="2" stroke="#0051ba" stroke-width="2"/>
+                    <path d="M10 14h20M10 20h20M10 26h14" stroke="#0051ba" stroke-width="1.5" stroke-linecap="round"/>
+                    <circle cx="8" cy="14" r="1.5" fill="#0051ba"/>
+                    <circle cx="8" cy="20" r="1.5" fill="#0051ba"/>
+                    <circle cx="8" cy="26" r="1.5" fill="#0051ba"/>
+                  </svg>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h4 class="font-semibold text-gray-900 dark:text-white">MySQL</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Relational DB</p>
               </div>
-              <h4 class="font-semibold text-gray-900 dark:text-white">MySQL</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Relational DB</p>
             </div>
 
             <!-- SQLite -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="20" cy="12" r="5" stroke="#003b57" stroke-width="2"/>
-                  <path d="M15 17h10c2.2 0 4 1.8 4 4v8c0 2.2-1.8 4-4 4H15c-2.2 0-4-1.8-4-4v-8c0-2.2 1.8-4 4-4z" stroke="#003b57" stroke-width="2"/>
-                  <path d="M18 22h4M18 27h4" stroke="#003b57" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
+            <div class="group card card-border hover:border-primary-500 hover:shadow-xl transition-all duration-300 animate-fade-in-up" style="animation-delay: 150ms;">
+              <figure class="flex justify-center pt-6">
+                <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-white dark:bg-gray-700 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-all">
+                  <svg class="w-8 h-8 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="12" r="5" stroke="#003b57" stroke-width="2"/>
+                    <path d="M15 17h10c2.2 0 4 1.8 4 4v8c0 2.2-1.8 4-4 4H15c-2.2 0-4-1.8-4-4v-8c0-2.2 1.8-4 4-4z" stroke="#003b57" stroke-width="2"/>
+                    <path d="M18 22h4M18 27h4" stroke="#003b57" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h4 class="font-semibold text-gray-900 dark:text-white">SQLite</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Lightweight DB</p>
               </div>
-              <h4 class="font-semibold text-gray-900 dark:text-white">SQLite</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Lightweight DB</p>
             </div>
           </div>
         </div>
 
         <!-- DevOps & Tools -->
         <div>
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-2">
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-3 animate-fade-in-up animation-delay-200">
             <span class="w-1 h-8 bg-gradient-to-b from-primary-500 to-primary-600 rounded-full"></span>
             DevOps & Tools
           </h3>
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             <!-- Docker -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M32 10h-3V8h-2v2h-3v2h3v2h-3v2h3v2h-3v2h3v2h-2v-2h-3v2h-2v-2h-3v2h-2v-2h-3v2h-2v-2H8v2h-2v-2H4v2h2v2H4v2h2v2H4v2h4v-2h3v2h2v-2h3v2h2v-2h3v2h2v-2h3v2h2v-2h2v-2h2V10z" fill="#2496ed" stroke="#2496ed" stroke-width="0.5"/>
-                  <rect x="8" y="12" width="4" height="4" fill="#2496ed"/>
-                  <rect x="14" y="12" width="4" height="4" fill="#2496ed"/>
-                  <rect x="20" y="12" width="4" height="4" fill="#2496ed"/>
-                  <rect x="8" y="18" width="4" height="4" fill="#2496ed"/>
-                  <rect x="14" y="18" width="4" height="4" fill="#2496ed"/>
-                </svg>
+            <div class="group card card-border hover:border-primary-500 hover:shadow-xl transition-all duration-300 animate-fade-in-up" style="animation-delay: 100ms;">
+              <figure class="flex justify-center pt-6">
+                <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-white dark:bg-gray-700 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-all">
+                  <svg class="w-8 h-8 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 10h-3V8h-2v2h-3v2h3v2h-3v2h3v2h-3v2h3v2h-2v-2h-3v2h-2v-2h-3v2h-2v-2h-3v2h-2v-2H8v2h-2v-2H4v2h2v2H4v2h2v2H4v2h4v-2h3v2h2v-2h3v2h2v-2h3v2h2v-2h3v2h2v-2h2v-2h2V10z" fill="#2496ed" stroke="#2496ed" stroke-width="0.5"/>
+                    <rect x="8" y="12" width="4" height="4" fill="#2496ed"/>
+                    <rect x="14" y="12" width="4" height="4" fill="#2496ed"/>
+                    <rect x="20" y="12" width="4" height="4" fill="#2496ed"/>
+                    <rect x="8" y="18" width="4" height="4" fill="#2496ed"/>
+                    <rect x="14" y="18" width="4" height="4" fill="#2496ed"/>
+                  </svg>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h4 class="font-semibold text-gray-900 dark:text-white">Docker</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Containerization</p>
               </div>
-              <h4 class="font-semibold text-gray-900 dark:text-white">Docker</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Containerization</p>
             </div>
 
             <!-- Git -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="20" cy="11" r="4" stroke="#f1502f" stroke-width="2"/>
-                  <circle cx="28" cy="28" r="4" stroke="#f1502f" stroke-width="2"/>
-                  <circle cx="12" cy="28" r="4" stroke="#f1502f" stroke-width="2"/>
-                  <path d="M23 14v8c0 1.6-1.3 3-3 3h0c-1.6 0-3-1.3-3-3v-8M23 21h3M14 25v-3c0-1.6 1.3-3 3-3" stroke="#f1502f" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
+            <div class="group card card-border hover:border-primary-500 hover:shadow-xl transition-all duration-300 animate-fade-in-up" style="animation-delay: 150ms;">
+              <figure class="flex justify-center pt-6">
+                <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-white dark:bg-gray-700 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-all">
+                  <svg class="w-8 h-8 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="11" r="4" stroke="#f1502f" stroke-width="2"/>
+                    <circle cx="28" cy="28" r="4" stroke="#f1502f" stroke-width="2"/>
+                    <circle cx="12" cy="28" r="4" stroke="#f1502f" stroke-width="2"/>
+                    <path d="M23 14v8c0 1.6-1.3 3-3 3h0c-1.6 0-3-1.3-3-3v-8M23 21h3M14 25v-3c0-1.6 1.3-3 3-3" stroke="#f1502f" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h4 class="font-semibold text-gray-900 dark:text-white">Git</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Version Control</p>
               </div>
-              <h4 class="font-semibold text-gray-900 dark:text-white">Git</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Version Control</p>
             </div>
 
             <!-- GitHub Actions -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 6C12.3 6 6 12.3 6 20s6.3 14 14 14 14-6.3 14-14-6.3-14-14-14zm0 2c6.6 0 12 5.4 12 12s-5.4 12-12 12-12-5.4-12-12 5.4-12 12-12z" fill="#1f2937"/>
-                  <path d="M19 12v8l6 4" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
-                  <circle cx="20" cy="20" r="8" stroke="#1f2937" stroke-width="1.5" fill="none" opacity="0.3"/>
-                </svg>
+            <div class="group card card-border hover:border-primary-500 hover:shadow-xl transition-all duration-300 animate-fade-in-up" style="animation-delay: 200ms;">
+              <figure class="flex justify-center pt-6">
+                <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-white dark:bg-gray-700 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-all">
+                  <svg class="w-8 h-8 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 6C12.3 6 6 12.3 6 20s6.3 14 14 14 14-6.3 14-14-6.3-14-14-14zm0 2c6.6 0 12 5.4 12 12s-5.4 12-12 12-12-5.4-12-12 5.4-12 12-12z" fill="#1f2937"/>
+                    <path d="M19 12v8l6 4" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="20" cy="20" r="8" stroke="#1f2937" stroke-width="1.5" fill="none" opacity="0.3"/>
+                  </svg>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h4 class="font-semibold text-gray-900 dark:text-white">GitHub Actions</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">CI/CD</p>
               </div>
-              <h4 class="font-semibold text-gray-900 dark:text-white">GitHub Actions</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">CI/CD</p>
             </div>
           </div>
         </div>

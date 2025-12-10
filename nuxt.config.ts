@@ -72,7 +72,12 @@ export default defineNuxtConfig({
           type: 'image/svg+xml',
           href: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23ef4444" width="100" height="100"/><text x="50" y="65" font-size="60" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">Y</text></svg>'
         },
-        { rel: 'preconnect', href: 'https://fonts.googleapis.com' }
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
+        { 
+          rel: 'stylesheet', 
+          href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&family=Outfit:wght@400;500;600;700&display=swap' 
+        }
       ],
       htmlAttrs: {
         lang: 'en'
@@ -83,7 +88,7 @@ export default defineNuxtConfig({
   // Experimental features
   experimental: {
     payloadExtraction: false,
-    renderJsonPayload: true
+    renderJsonPayloads: true
   },
 
   // Build configuration
