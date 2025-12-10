@@ -263,23 +263,23 @@
         </div>
 
         <!-- Tabs Navigation -->
-        <div x-data="{ activeTab: 'laravel' }" class="space-y-8">
+        <div class="space-y-8">
           <!-- Tab Buttons -->
           <div class="flex flex-wrap gap-4 justify-center mb-12">
-            <button @click="activeTab = 'laravel'" :class="activeTab === 'laravel' ? 'bg-primary-600 text-white' : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600'" class="px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+            <button @click="activeSkillsTab = 'laravel'" :class="activeSkillsTab === 'laravel' ? 'bg-primary-600 text-white' : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600'" class="px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
               Laravel Ecosystem
             </button>
-            <button @click="activeTab = 'databases'" :class="activeTab === 'databases' ? 'bg-primary-600 text-white' : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600'" class="px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+            <button @click="activeSkillsTab = 'databases'" :class="activeSkillsTab === 'databases' ? 'bg-primary-600 text-white' : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600'" class="px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
               Databases
             </button>
-            <button @click="activeTab = 'devops'" :class="activeTab === 'devops' ? 'bg-primary-600 text-white' : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600'" class="px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+            <button @click="activeSkillsTab = 'devops'" :class="activeSkillsTab === 'devops' ? 'bg-primary-600 text-white' : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600'" class="px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
               DevOps & Tools
             </button>
           </div>
 
           <!-- Tab Content -->
           <!-- Laravel Ecosystem Tab -->
-          <div x-show="activeTab === 'laravel'" x-transition class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div v-show="activeSkillsTab === 'laravel'" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 animate-fade-in"
             <!-- Laravel -->
             <div class="group p-5 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-center cursor-pointer">
               <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-gray-600 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-colors">
@@ -343,7 +343,7 @@
           </div>
 
           <!-- Databases Tab -->
-          <div x-show="activeTab === 'databases'" x-transition class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div v-show="activeSkillsTab === 'databases'" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 animate-fade-in">
             <!-- MySQL -->
             <div class="group p-5 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-center cursor-pointer">
               <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-gray-600 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 transition-colors">
@@ -374,7 +374,7 @@
           </div>
 
           <!-- DevOps & Tools Tab -->
-          <div x-show="activeTab === 'devops'" x-transition class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div v-show="activeSkillsTab === 'devops'" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 animate-fade-in">
             <!-- Docker -->
             <div class="group p-5 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-center cursor-pointer">
               <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-gray-600 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 transition-colors">
@@ -507,6 +507,10 @@
 
 <script setup lang="ts">
 import { useHead } from '#app'
+import { ref } from 'vue'
+
+// Skills tabs state
+const activeSkillsTab = ref('laravel')
 
 // Structured data for projects
 const projectsSchema = {
