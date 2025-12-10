@@ -279,7 +279,7 @@
 
           <!-- Tab Content -->
           <!-- Laravel Ecosystem Tab -->
-          <div v-show="activeSkillsTab === 'laravel'" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 animate-fade-in"
+          <div v-show="activeSkillsTab === 'laravel'" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 animate-fade-in">
             <!-- Laravel -->
             <div class="group p-5 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-center cursor-pointer">
               <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-gray-600 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-colors">
