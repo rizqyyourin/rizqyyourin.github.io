@@ -30,15 +30,21 @@ export default defineNuxtConfig({
   // CSS
   css: ['~/assets/css/main.css'],
   
-  // Nitro configuration untuk static generation
+  // Nitro configuration untuk static generation dan GitHub Pages SPA
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/sitemap.xml', '/robots.txt', '/404.html'],
+      routes: ['/', '/sitemap.xml', '/robots.txt', '/404.html'],
       ignore: ['/admin']
     },
     output: {
-      publicDir: '.output/public'
+      publicDir: 'docs'
+    },
+    storage: {
+      fs: {
+        driver: 'fs',
+        base: './docs'
+      }
     }
   },
 
