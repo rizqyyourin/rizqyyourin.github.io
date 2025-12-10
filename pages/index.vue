@@ -262,17 +262,28 @@
           </p>
         </div>
 
-        <!-- Laravel Frameworks -->
-        <div class="mb-16">
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-2">
-            <span class="w-1 h-8 bg-gradient-to-b from-primary-500 to-primary-600 rounded-full"></span>
-            Laravel Ecosystem
-          </h3>
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <!-- Tabs Navigation -->
+        <div x-data="{ activeTab: 'laravel' }" class="space-y-8">
+          <!-- Tab Buttons -->
+          <div class="flex flex-wrap gap-4 justify-center mb-12">
+            <button @click="activeTab = 'laravel'" :class="activeTab === 'laravel' ? 'bg-primary-600 text-white' : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600'" class="px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+              Laravel Ecosystem
+            </button>
+            <button @click="activeTab = 'databases'" :class="activeTab === 'databases' ? 'bg-primary-600 text-white' : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600'" class="px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+              Databases
+            </button>
+            <button @click="activeTab = 'devops'" :class="activeTab === 'devops' ? 'bg-primary-600 text-white' : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600'" class="px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+              DevOps & Tools
+            </button>
+          </div>
+
+          <!-- Tab Content -->
+          <!-- Laravel Ecosystem Tab -->
+          <div x-show="activeTab === 'laravel'" x-transition class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             <!-- Laravel -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="group p-5 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-center cursor-pointer">
+              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-gray-600 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-colors">
+                <svg class="w-8 h-8 text-primary-600 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M38.2 13.6c0-.7-.4-1.4-1.1-1.8L20.9 2.1c-.7-.4-1.5-.4-2.2 0L3 11.8c-.7.4-1.1 1.1-1.1 1.8v13c0 .7.4 1.4 1.1 1.8l16.2 9.7c.4.2.8.3 1.1.3s.8-.1 1.1-.3l16.2-9.7c.7-.4 1.1-1.1 1.1-1.8v-13zm-17.6 20L6.5 25.6v-11l14.1-8.4 14.1 8.4v11l-14.1 8.4z" fill="#ef4444"/>
                 </svg>
               </div>
@@ -281,9 +292,9 @@
             </div>
 
             <!-- Livewire -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="group p-5 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-center cursor-pointer">
+              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-gray-600 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-colors">
+                <svg class="w-8 h-8 text-primary-600 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="20" cy="20" r="18" stroke="#ef4444" stroke-width="2"/>
                   <path d="M20 8v24M8 20h24" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
                   <circle cx="20" cy="20" r="4" fill="#ef4444"/>
@@ -294,9 +305,9 @@
             </div>
 
             <!-- Filament -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="group p-5 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-center cursor-pointer">
+              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-gray-600 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-colors">
+                <svg class="w-8 h-8 text-primary-600 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="8" y="8" width="24" height="24" rx="2" stroke="#ef4444" stroke-width="2"/>
                   <path d="M14 14h12M14 20h12M14 26h8" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
@@ -306,9 +317,9 @@
             </div>
 
             <!-- Lumen -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="group p-5 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-center cursor-pointer">
+              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-gray-600 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-colors">
+                <svg class="w-8 h-8 text-primary-600 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="20" cy="20" r="12" stroke="#ef4444" stroke-width="2"/>
                   <circle cx="20" cy="20" r="8" fill="none" stroke="#ef4444" stroke-width="1.5"/>
                   <circle cx="20" cy="20" r="4" fill="#ef4444"/>
@@ -319,9 +330,9 @@
             </div>
 
             <!-- Nova -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="group p-5 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-center cursor-pointer">
+              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-gray-600 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30 transition-colors">
+                <svg class="w-8 h-8 text-primary-600 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 2L38 10v20L20 38L2 30V10L20 2z" stroke="#ef4444" stroke-width="2"/>
                   <circle cx="20" cy="20" r="4" fill="#ef4444"/>
                 </svg>
@@ -330,19 +341,13 @@
               <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Admin Interface</p>
             </div>
           </div>
-        </div>
 
-        <!-- Backend & Databases -->
-        <div class="mb-16">
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-2">
-            <span class="w-1 h-8 bg-gradient-to-b from-primary-500 to-primary-600 rounded-full"></span>
-            Databases
-          </h3>
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <!-- Databases Tab -->
+          <div x-show="activeTab === 'databases'" x-transition class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             <!-- MySQL -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="group p-5 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-center cursor-pointer">
+              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-gray-600 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 transition-colors">
+                <svg class="w-8 h-8 text-blue-600 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="6" y="8" width="28" height="24" rx="2" stroke="#0051ba" stroke-width="2"/>
                   <path d="M10 14h20M10 20h20M10 26h14" stroke="#0051ba" stroke-width="1.5" stroke-linecap="round"/>
                   <circle cx="8" cy="14" r="1.5" fill="#0051ba"/>
@@ -355,9 +360,9 @@
             </div>
 
             <!-- SQLite -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="group p-5 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-center cursor-pointer">
+              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-gray-600 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 transition-colors">
+                <svg class="w-8 h-8 text-blue-600 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="20" cy="12" r="5" stroke="#003b57" stroke-width="2"/>
                   <path d="M15 17h10c2.2 0 4 1.8 4 4v8c0 2.2-1.8 4-4 4H15c-2.2 0-4-1.8-4-4v-8c0-2.2 1.8-4 4-4z" stroke="#003b57" stroke-width="2"/>
                   <path d="M18 22h4M18 27h4" stroke="#003b57" stroke-width="1.5" stroke-linecap="round"/>
@@ -367,19 +372,13 @@
               <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Lightweight DB</p>
             </div>
           </div>
-        </div>
 
-        <!-- DevOps & Tools -->
-        <div>
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-2">
-            <span class="w-1 h-8 bg-gradient-to-b from-primary-500 to-primary-600 rounded-full"></span>
-            DevOps & Tools
-          </h3>
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <!-- DevOps & Tools Tab -->
+          <div x-show="activeTab === 'devops'" x-transition class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             <!-- Docker -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="group p-5 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-center cursor-pointer">
+              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-gray-600 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 transition-colors">
+                <svg class="w-8 h-8 text-blue-600 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M32 10h-3V8h-2v2h-3v2h3v2h-3v2h3v2h-3v2h3v2h-2v-2h-3v2h-2v-2h-3v2h-2v-2h-3v2h-2v-2H8v2h-2v-2H4v2h2v2H4v2h2v2H4v2h4v-2h3v2h2v-2h3v2h2v-2h3v2h2v-2h3v2h2v-2h2v-2h2V10z" fill="#2496ed" stroke="#2496ed" stroke-width="0.5"/>
                   <rect x="8" y="12" width="4" height="4" fill="#2496ed"/>
                   <rect x="14" y="12" width="4" height="4" fill="#2496ed"/>
@@ -393,9 +392,9 @@
             </div>
 
             <!-- Git -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="group p-5 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-center cursor-pointer">
+              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-gray-600 group-hover:bg-orange-100 dark:group-hover:bg-orange-900/30 transition-colors">
+                <svg class="w-8 h-8 text-orange-600 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="20" cy="11" r="4" stroke="#f1502f" stroke-width="2"/>
                   <circle cx="28" cy="28" r="4" stroke="#f1502f" stroke-width="2"/>
                   <circle cx="12" cy="28" r="4" stroke="#f1502f" stroke-width="2"/>
@@ -407,9 +406,9 @@
             </div>
 
             <!-- GitHub Actions -->
-            <div class="card text-center hover:shadow-lg transition-shadow group">
-              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-dark-700">
-                <svg class="w-8 h-8 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="group p-5 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-center cursor-pointer">
+              <div class="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-3 bg-white dark:bg-gray-600 group-hover:bg-gray-200 dark:group-hover:bg-gray-700 transition-colors">
+                <svg class="w-8 h-8 text-gray-800 dark:text-gray-200 group-hover:scale-125 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 6C12.3 6 6 12.3 6 20s6.3 14 14 14 14-6.3 14-14-6.3-14-14-14zm0 2c6.6 0 12 5.4 12 12s-5.4 12-12 12-12-5.4-12-12 5.4-12 12-12z" fill="#1f2937"/>
                   <path d="M19 12v8l6 4" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
                   <circle cx="20" cy="20" r="8" stroke="#1f2937" stroke-width="1.5" fill="none" opacity="0.3"/>
