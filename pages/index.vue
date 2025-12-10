@@ -82,8 +82,7 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" alt="Tailwind CSS" class="w-10 h-10 object-contain" />
               </div>
               <div>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Tailwind CSS</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Utility-first CSS for rapid UI development</p>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Tailwind CSS</h3>
               </div>
             </div>
           </div>
@@ -95,8 +94,7 @@
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqvNQyIyR6GOd1wFUk_UM5PScxQvwL0SSpsQ&s" alt="Alpine.js" class="w-10 h-10 object-contain" />
               </div>
               <div>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Alpine.js</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Lightweight JavaScript for interactivity</p>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Alpine.js</h3>
               </div>
             </div>
           </div>
@@ -108,8 +106,7 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png" alt="Laravel" class="w-10 h-10 object-contain" />
               </div>
               <div>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Laravel</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Powerful backend framework</p>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Laravel</h3>
               </div>
             </div>
           </div>
@@ -121,8 +118,7 @@
                 <img src="https://logo.svgcdn.com/devicon/livewire-original-wordmark.png" alt="Livewire" class="w-10 h-10 object-contain" />
               </div>
               <div>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Livewire</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Full-stack reactive components</p>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Livewire</h3>
               </div>
             </div>
           </div>
