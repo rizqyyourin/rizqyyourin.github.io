@@ -221,8 +221,8 @@
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">Interactive learning platform where users can explore and experiment with Laravel packages, features, and best practices in real-time.</p>
                 <div class="flex flex-wrap gap-2">
                   <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Laravel</span>
-                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Interactive</span>
-                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Learning</span>
+                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">React</span>
+                  <span class="inline-block px-3 py-1 text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300 rounded-full">Inertia</span>
                 </div>
               </div>
             </article>
